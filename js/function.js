@@ -14,7 +14,7 @@ $(document).ready(function() {
             },1000);
         });
     }
-    preloader();
+    // preloader();
     // setTimeout( ()=> preloader(),15000 )
 
     function toggleCallback() {
@@ -218,7 +218,7 @@ $(document).ready(function() {
         });
 
     };
-    changeSlide();
+    // changeSlide();
 
 
 

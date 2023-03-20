@@ -1,18 +1,18 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?emjvh7');
-  src:  url('fonts/icomoon.eot?emjvh7#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?emjvh7') format('truetype'),
-    url('fonts/icomoon.woff?emjvh7') format('woff'),
-    url('fonts/icomoon.svg?emjvh7#icomoon') format('svg');
+  font-family: 'icon';
+  src:  url('fonts/icon.eot?49gbcc');
+  src:  url('fonts/icon.eot?49gbcc#iefix') format('embedded-opentype'),
+    url('fonts/icon.ttf?49gbcc') format('truetype'),
+    url('fonts/icon.woff?49gbcc') format('woff'),
+    url('fonts/icon.svg?49gbcc#icon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon_"], [class*=" icon_"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: 'icon' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -25,18 +25,54 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-home:before {
+.icon_area:before {
   content: "\e900";
 }
-.icon-clock2:before {
-  content: "\e94f";
+.icon_check:before {
+  content: "\e901";
 }
-.icon-calendar:before {
-  content: "\e953";
+.icon_close:before {
+  content: "\e902";
 }
-.icon-printer:before {
-  content: "\e954";
+.icon_home:before {
+  content: "\e903";
 }
-.icon-arrow-down:before {
-  content: "\ea36";
+.icon_location:before {
+  content: "\e904";
+}
+.icon_plus:before {
+  content: "\e905";
+}
+.icon_telegram:before {
+  content: "\e906";
+}
+.icon_whatsapp:before {
+  content: "\e907";
+}
+.icon_ellipse:before {
+  content: "\e90f";
+}
+.icon_arrow_left:before {
+  content: "\e908";
+}
+.icon_arrow_right:before {
+  content: "\e90a";
+}
+.icon_arrow_top:before {
+  content: "\e909";
+}
+.icon_arrow_bottom:before {
+  content: "\e90b";
+}
+.icon_arrow_left_sm:before {
+  content: "\e90e";
+}
+.icon_arrow_right_sm:before {
+  content: "\e90c";
+}
+.icon_arrow_top_sm:before {
+  content: "\e910";
+}
+.icon_arrow_bottom_sm:before {
+  content: "\e90d";
 }

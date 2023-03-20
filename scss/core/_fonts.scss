@@ -1,9 +1,12 @@
-@include font-face("Roboto", '../fonts/Roboto/Roboto-Medium', 500, normal);
-@include font-face("Roboto", '../fonts/Roboto/Roboto-Bold', bold, normal);
-@include font-face("Roboto", '../fonts/Roboto/Roboto-Light', 300, normal);
-@include font-face("Roboto", '../fonts/Roboto/Roboto-Regular', normal, normal);
+@include font-face("Cormorant", '../fonts/Cormorant/Cormorant-Light', 300, normal);
+@include font-face("Cormorant", '../fonts/Cormorant/Cormorant-Regular', normal, normal);
 
-@include font-face("Roboto Slab", '../fonts/Roboto_Slab/RobotoSlab-Bold', bold, normal);
-@include font-face("Roboto Slab", '../fonts/Roboto_Slab/RobotoSlab-Light', 300, normal);
-@include font-face("Roboto Slab", '../fonts/Roboto_Slab/RobotoSlab-Medium', 500, normal);
-@include font-face("Roboto Slab", '../fonts/Roboto_Slab/RobotoSlab-Regular', normal, normal);
+@include font-face("Cormorant", '../fonts/Cormorant/Cormorant-SemiBoldItalic', 600, italic);
+@include font-face("Cormorant", '../fonts/Cormorant/Cormorant-Italic', normal, italic);
+
+@include font-face("Vasek", '../fonts/Vasek/Vasek-Italic', normal, italic);
+
+@include font-face("Onest", '../fonts/Onest/Onest-Thin', 100, normal);
+@include font-face("Onest", '../fonts/Onest/Onest-Light', 300, normal);
+@include font-face("Onest", '../fonts/Onest/Onest-Regular', normal, normal);
+@include font-face("Onest", '../fonts/Onest/Onest-Medium', 500, normal);
