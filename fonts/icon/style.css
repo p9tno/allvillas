@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icon';
-  src:  url('fonts/icon.eot?49gbcc');
-  src:  url('fonts/icon.eot?49gbcc#iefix') format('embedded-opentype'),
-    url('fonts/icon.ttf?49gbcc') format('truetype'),
-    url('fonts/icon.woff?49gbcc') format('woff'),
-    url('fonts/icon.svg?49gbcc#icon') format('svg');
+  src:  url('fonts/icon.eot?ymld8l');
+  src:  url('fonts/icon.eot?ymld8l#iefix') format('embedded-opentype'),
+    url('fonts/icon.ttf?ymld8l') format('truetype'),
+    url('fonts/icon.woff?ymld8l') format('woff'),
+    url('fonts/icon.svg?ymld8l#icon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -34,6 +34,9 @@
 .icon_close:before {
   content: "\e902";
 }
+.icon_close_bold:before {
+  content: "\e911";
+}
 .icon_home:before {
   content: "\e903";
 }
@@ -42,6 +45,9 @@
 }
 .icon_plus:before {
   content: "\e905";
+}
+.icon_phone:before {
+  content: "\e912";
 }
 .icon_telegram:before {
   content: "\e906";

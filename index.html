@@ -11,68 +11,82 @@
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
   </head>
   <body>
-    <div class="preloader__wrap" id="preloader">
-      <div class="preloader"></div>
-    </div>
     <div class="wrapper">
       <header class="header">
         <div class="header__content">
-          <div class="header__logo"><a class="logo" href="/"><img src="/img/logo.png" alt="alt"/></a></div>
-          <div class="header__toggle"></div>
-          <div class="header__nav">
-            <nav class="navbar" id="navbar">
-              <ul class="menu">
-                <li class="menu-item current-menu-item"><a href="#">Новости</a></li>
-                <li class="menu-item"><a href="#">Объявления</a></li>
-                <li class="menu-item"><a href="#">F.A.Q.</a></li>
-                <li class="menu-item"><a href="#">Контакты</a></li>
-                <li class="menu-item menu-item-has-children"><a href="#">Важное</a>
-                  <ul class="sub-menu">
-                    <li class="menu-item"><a href="#">Важный пункт меню</a></li>
-                    <li class="menu-item"><a href="#">Важный пункт меню</a></li>
-                    <li class="menu-item"><a href="#">Важный пункт меню</a></li>
-                    <li class="menu-item"><a href="#">Важный пункт меню</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header>
-      <main class="main_content">
-        <!-- begin first-->
-        <section class="first section" id="first">
-          <div class="container_center">
-            <h2 class="section__title">first section title</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p><i class="icon-home"></i><i class="icon-clock2"></i><i class="icon-calendar"></i><i class="icon-printer"></i></p>
-          </div>
-        </section>
-        <!-- end first-->
-        <!-- begin programsInfo-->
-        <section class="section">
-          <div class="container_center">
-            <div class="programsInfo">
-              <div class="programsInfo__item">
-                <div class="programsInfo__number">12</div>
-                <div class="programsInfo__text">Программ</div>
+          <div class="header__row">
+            <div class="header__col">
+              <div class="logo"><a class="logo__link img" href="/"><img src="/img/logo.png" alt="alt"/></a>
+                <div class="logo__label desktop">
+                  <div class="logo__flag img"><img src="../img/UAE.png" alt="alt"/></div><span>Главный портал по виллам в Дубае</span>
+                </div>
               </div>
-              <div class="programsInfo__item">
-                <div class="programsInfo__number">25</div>
-                <div class="programsInfo__text">Компетенций</div>
+            </div>
+            <div class="header__col">
+              <div class="social"><a class="social__link" href="tel:+ 971 4 528 2833"><i class="icon_phone mobile"></i>
+                  <div class="social__number desktop"> <span>+ 971 4 528 2833</span></div>
+                  <div class="social__label desktop"> <span>бесплатная консультация эксперта</span></div></a><a class="social__link" href="#"><i class="icon_telegram"></i></a><a class="social__link" href="#"><i class="icon_whatsapp"></i></a></div>
+            </div>
+            <div class="header__col desktop"> 
+              <div class="switch">
+                <label class="switch__label">
+                  <input type="checkbox" id="themeCheckbox" name="themeCheckbox"/><span><i></i></span>
+                </label>
               </div>
-              <div class="programsInfo__item">
-                <div class="programsInfo__number">29</div>
-                <div class="programsInfo__text">Преподавателей <br>и экспертов</div>
+            </div>
+            <div class="header__col">
+              <div class="hamburger">
+                <div class="hamburger__icon"></div>
               </div>
             </div>
           </div>
-        </section>
-        <!-- end programsInfo-->
+        </div>
+        <div class="header__nav">
+          <div class="logo mobile"><a class="logo__link" href="/"><img src="/img/logo.png" alt="alt"/></a></div>
+          <nav class="navbar">
+            <ul class="menu">
+              <li class="menu-item current-menu-item"><a href="#">Главная</a></li>
+              <li class="menu-item"><a href="#">Готовые подборки проектов</a></li>
+              <li class="menu-item"><a href="#">Подбор виллы / таунхауса</a></li>
+              <li class="menu-item"><a href="#">Полный каталог проектов</a></li>
+              <li class="menu-item"><a href="#">Блог</a></li>
+            </ul>
+          </nav>
+          <div class="social mobile"><a class="social__link" href="#"><i class="icon_telegram"></i></a><a class="social__link" href="#"><i class="icon_whatsapp"></i></a><a class="social__link" href="#">
+              <div class="social__number"> <span>+ 971 4 528 2833</span></div>
+              <div class="social__label"> <span>бесплатная консультация эксперта</span></div></a></div>
+        </div>
+      </header>
+      <main class="main_content">
       </main>
       <footer class="footer">
         <div class="footer__content">
-          <p></p>&copy; 2016 |<i class="fa fa-github" aria-hidden="true">&nbsp;</i><a href="#">View Source</a>
+          <div class="footer__row">
+            <div class="footer__col">
+              <div class="logo"><a class="logo__link img" href="/"><img src="/img/logo_w.png" alt="alt"/></a>
+                <div class="logo__label mobile"><span>Главный портал<br> по виллам в Дубае</span></div>
+              </div>
+            </div>
+            <div class="footer__col">
+              <nav class="navbar">
+                <ul class="menu">
+                  <li class="menu-item current-menu-item"><a href="#">Блог</a></li>
+                  <li class="menu-item"><a href="#">Подобрать виллу</a></li>
+                  <li class="menu-item"><a href="#">Каталог вилл</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__col">
+              <div class="social"><a class="social__link mobile" href="#"><i class="icon_telegram"></i></a><a class="social__link mobile" href="#"><i class="icon_whatsapp"></i></a><a class="social__link" href="#">
+                  <div class="social__number"> <span>+ 971 4 528 2833</span></div>
+                  <div class="social__label"> <span>бесплатная консультация эксперта</span></div></a></div>
+            </div>
+          </div>
+          <div class="footer__row">
+            <div class="footer__col"><a href="#">Политика конфиденциальности</a></div>
+            <div class="footer__col"><span>License no. 1124471</span></div>
+            <div class="footer__col desktop"><span>© <script type="text/javascript">document.write(new Date().getFullYear());</script></span></div>
+          </div>
         </div>
       </footer>
       <script src="js/jquery.js"></script>

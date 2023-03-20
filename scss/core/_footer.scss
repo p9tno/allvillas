@@ -1,14 +1,235 @@
 /* Footer
  ----------------------------------------------------------------------------- */
+
 .footer {
-	position: relative;
-	padding: 1em 0;
-	background-color: #ddd;
+	background-color: $color_info;
+	box-shadow: 0 75px 150px rgba(51, 51, 51, 0.05);
 
 	&__content {
 		@extend .container_center;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		margin: auto;
+		padding: 2.375em 1em 2.625em;
+		@media (min-width: 768px) {
+			padding: 2.5em 1em;
+
+		}
+	}
+
+	&__row {
+		@media (min-width: 768px) {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&:first-child {
+			margin-bottom: 3.5em;
+			@media (min-width: 768px) {
+				margin-bottom: 5.625em;
+			}
+
+			.footer__col {
+				margin-bottom: 3.5em;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+				@media (min-width: 768px) {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		&:last-child {
+			.footer__col {
+				margin-bottom: 0.25em;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+			@media (min-width: 768px) {
+				.footer__col {
+					margin-bottom: 0;
+
+					&:nth-child(2) {
+						order: -1;
+					}
+				}
+
+			}
+		}
+	}
+
+	&__col {
+		text-align: center;
+		@media (min-width: 768px) {
+			text-align: left;
+		}
+
+		> span,
+		> a {
+			color: rgba($color_white, 0.2);
+			font-size: 0.625em;
+
+			@media (min-width: 768px) {
+				font-size: 0.875em;
+			}
+		}
+
+		> a {
+			position: relative;
+			text-decoration: none;
+
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: -0.0625em;
+				left: 0;
+				width: 100%;
+				border-bottom: 0.0625em solid;
+				border-color: rgba($color_white, 0.1);
+				transition: 0.3s;
+			}
+
+			&:hover {
+				color: $color_white;
+			}
+
+		}
+	}
+
+	.menu {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		@media (min-width: 768px) {
+			display: flex;
+		}
+
+		.menu-item {
+			text-transform: uppercase;
+			margin-bottom: 1em;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			@media (min-width: 768px) {
+				margin-bottom: 0;
+				margin-right: 3.875em;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+			}
+
+			a {
+				position: relative;
+				text-decoration: none;
+				color: $color_white;
+				font-family: $second_font_family;
+				font-size: 1.5em;
+
+				&:after {
+					content: '';
+					position: absolute;
+					bottom: -0.125em;
+					left: 0;
+					width: 100%;
+					border-bottom: 0.0625em solid;
+					border-color: rgba($color_white, 0.1);
+					transition: 0.3s;
+				}
+			}
+
+			&:hover {
+				a {
+					color: $color_danger;
+
+					&:after {
+						border-color: rgba($color_danger, 0.1);
+
+					}
+				}
+			}
+
+		}
+
+		.current-menu-item > a {
+			color: $color_danger;
+
+			&:after {
+				border-color: rgba($color_danger, 0.1);
+
+			}
+
+		}
+	}
+
+	.logo {
+		&__link {
+			display: block;
+			width: 4.375em;
+			height: 3.125em;
+			font-size: 1.143em;
+			margin: 0 auto 0.6em;
+			@media (min-width: 768px) {
+				margin: 0;
+				font-size: 1em;
+			}
+		}
+
+		&__label {
+			text-align: center;
+			line-height: 0.8;
+
+			span {
+				color: $color_white;
+				font-size: 0.625em;
+			}
+		}
+
+	}
+
+	.social {
+		flex-wrap: wrap;
+		justify-content: center;
+
+		&__link {
+			color: $color_white;
+
+			i {
+				&:before {
+					font-size: 1.125em;
+
+				}
+
+				&.icon_telegram {
+					color: $color_white;
+				}
+
+				&.icon_whatsapp {
+					color: $color_white;
+				}
+			}
+
+			&:last-child {
+				margin-top: 0.75em;
+				width: 100%;
+
+				@media (min-width: 768px) {
+					margin-top: 0;
+					width: auto;
+				}
+
+				.social__label {
+					@media (max-width: 767px) {
+						margin-right: 4em;
+					}
+				}
+			}
+		}
 	}
 }

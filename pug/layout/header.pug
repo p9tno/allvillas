@@ -1,25 +1,70 @@
 header.header
     .header__content
-        .header__logo
-            a.logo(href="/")
+        .header__row
+
+            .header__col
+                .logo
+                    a.logo__link.img(href="/")
+                        img(src="/img/logo.png", alt="alt")
+
+                    .logo__label.desktop
+                        .logo__flag.img
+                            img(src="../img/UAE.png", alt="alt")
+                        span Главный портал по виллам в Дубае
+
+            .header__col
+                .social
+                    a.social__link(href="tel:+ 971 4 528 2833")
+                        i.icon_phone.mobile
+                        .social__number.desktop 
+                            span + 971 4 528 2833
+                        .social__label.desktop 
+                            span бесплатная консультация эксперта
+
+                    a.social__link(href="#")
+                        i.icon_telegram
+
+                    a.social__link(href="#")
+                        i.icon_whatsapp
+
+            .header__col.desktop 
+                .switch
+                    label.switch__label
+                        input(type="checkbox" id="themeCheckbox" name="themeCheckbox")
+                        span
+                            i
+
+            .header__col
+                .hamburger
+                    .hamburger__icon
+
+    .header__nav
+        .logo.mobile
+            a.logo__link(href="/")
                 img(src="/img/logo.png", alt="alt")
 
-        .header__toggle
+        nav.navbar
+            ul.menu
+                li.menu-item.current-menu-item
+                    a(href="#") Главная
+                li.menu-item
+                    a(href="#") Готовые подборки проектов
+                li.menu-item
+                    a(href="#") Подбор виллы / таунхауса
+                li.menu-item
+                    a(href="#") Полный каталог проектов
+                li.menu-item
+                    a(href="#") Блог
 
-        .header__nav
-            nav.navbar#navbar
-                ul.menu
-                    li.menu-item.current-menu-item
-                        a(href="#") Новости
-                    li.menu-item
-                        a(href="#") Объявления
-                    li.menu-item
-                        a(href="#") F.A.Q.
-                    li.menu-item
-                        a(href="#") Контакты
-                    li.menu-item.menu-item-has-children
-                        a(href="#") Важное
-                        ul.sub-menu
-                            each item in [1, 2, 3, 4]
-                                li.menu-item
-                                    a(href="#") Важный пункт меню
+        .social.mobile
+            a.social__link(href="#")
+                i.icon_telegram
+
+            a.social__link(href="#")
+                i.icon_whatsapp
+
+            a.social__link(href="#")
+                .social__number 
+                    span + 971 4 528 2833
+                .social__label 
+                    span бесплатная консультация эксперта

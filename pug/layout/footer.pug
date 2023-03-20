@@ -1,6 +1,39 @@
 footer.footer
     .footer__content
-        p
-        | &copy; 2016 |
-        i.fa.fa-github(aria-hidden='true') &nbsp;
-        a(href='#') View Source
+        .footer__row
+            .footer__col
+                .logo
+                    a.logo__link.img(href="/")
+                        img(src="/img/logo_w.png", alt="alt")
+
+                    .logo__label.mobile
+                        span Главный портал<br> по виллам в Дубае
+            .footer__col
+                nav.navbar
+                    ul.menu
+                        li.menu-item.current-menu-item
+                            a(href="#") Блог
+                        li.menu-item
+                            a(href="#") Подобрать виллу
+                        li.menu-item
+                            a(href="#") Каталог вилл
+            .footer__col
+                .social
+                    a.social__link.mobile(href="#")
+                        i.icon_telegram
+
+                    a.social__link.mobile(href="#")
+                        i.icon_whatsapp
+
+                    a.social__link(href="#")
+                        .social__number 
+                            span + 971 4 528 2833
+                        .social__label 
+                            span бесплатная консультация эксперта
+        .footer__row
+            .footer__col
+                a(href="#") Политика конфиденциальности
+            .footer__col
+                span License no. 1124471
+            .footer__col.desktop
+                span © <script type="text/javascript">document.write(new Date().getFullYear());</script>

@@ -35,7 +35,7 @@ $(document).ready(function() {
             $('.callback__toggle').addClass('active');
         });
     };
-    toggleCallback();
+    // toggleCallback();
 
 
     function toggleNav() {
@@ -60,7 +60,7 @@ $(document).ready(function() {
             $( 'body' ).removeClass( 'nav-open' );
         });
     }
-    hideNav();
+    // hideNav();
 
     function showModal() {
         $('.show_js').on('click', function (e) {
