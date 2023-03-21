@@ -62,11 +62,27 @@ body {
 }
 
 .section {
-	padding: 2em 0;
+	padding: 5em 0 7.5em;
 
 	&__title {
 		font-family: $second_font_family;
-		font-weight: 400;
+		font-weight: 300;
+		font-size: 1em;
+		text-transform: uppercase;
+		line-height: 0.95;
+		text-align: center;
+		margin: 0;
+		@media (min-width: 768px) {
+			text-align: left;
+		}
+
+		span {
+			font-size: 1.875em;
+			@media (min-width: 768px) {
+				font-size: 4.625em;
+
+			}
+		}
 	}
 }
 

@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/aos.css"/>
-    <link rel="stylesheet" type="text/css" href="css/fancybox.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/aos.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/fancybox.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
   </head>
   <body>
     <div class="wrapper">
@@ -58,23 +58,36 @@
         </div>
       </header>
       <main class="main_content">
-        <!-- begin testNav-->
-        <section class="testNav section" id="testNav" style="padding-top:10em;">
+        <!-- begin firstscreen style="background-image: url('../img/project.webp')"-->
+        <section class="firstscreen section" id="firstscreen">
+          <div class="firstscreen__img img desktop"><img src="../img/firstscreen_bg.webp" alt="alt"/></div>
+          <div class="firstscreen__img img mobile"><img src="../img/firstscreen_bg_m.webp" alt="alt"/></div>
           <div class="container_center">
-            <h2 class="section__title"><span>Навиганция</span></h2>
-            <ul style="font-size:1.25em;">
-              <li><a href="home">главная</a></li>
-            </ul>
+            <div class="firstscreen__content">
+              <h1 class="section__title"><span>Виллы </span><span>и таунхаусы Дубая</span><small>Лучшие проекты для жизни и инвестирования</small></h1>
+              <div class="firstscreen__btn"><a class="btn" href="#">Начать подбор</a></div>
+            </div>
           </div>
         </section>
-        <!-- end testNav-->
-        <!-- begin testButton-->
-        <section class="testButton section" id="testButton">
+        <!-- end firstscreen-->
+        <!-- begin choose-->
+        <section class="choose section" id="choose">
           <div class="container_center">
-            <h2 class="section__title"><span>Кнопки</span></h2>
-            <div class="testButton__content"><a class="btn" href="#">Начать подбор</a><br/><br/><a class="btn btn_transparent" href="#">Узнать подробнее</a><br/><br/><a class="btn btn_whatsapp" href="#">Whatsapp</a><br/><br/><a class="btn btn_telegram" href="#">Telegram</a></div>
+            <div class="choose__caption desktop">
+              <h2 class="section__title"><span>Выбирайте,<br>что подойдет<br>именно вам</span></h2>
+              <div class="choose__label"><span>6 готовых подборок проектов</span></div>
+            </div>
+            <div class="choose__content">
+              <div class="choose__caption mobile">
+                <h2 class="section__title"><span>Выбирайте,<br>что подойдет<br>именно вам</span></h2>
+                <div class="choose__label"><span>6 готовых подборок проектов</span></div>
+              </div>
+              <div class="choose__grid"><a class="choose__item img show_js" href="#modalChoose"><img src="../img/select_1.webp" alt="alt"/></a><a class="choose__item img show_js" href="#modalChoose"><img src="../img/select_2.webp" alt="alt"/></a><a class="choose__item img show_js" href="#modalChoose"><img src="../img/select_3.webp" alt="alt"/></a><a class="choose__item img show_js" href="#modalChoose"><img src="../img/select_4.webp" alt="alt"/></a><a class="choose__item img show_js" href="#modalChoose"><img src="../img/select_5.webp" alt="alt"/></a><a class="choose__item img show_js" href="#modalChoose"><img src="../img/select_6.webp" alt="alt"/></a>
+              </div>
+            </div>
           </div>
         </section>
+        <!-- end choose-->
       </main>
       <footer class="footer">
         <div class="footer__content">
@@ -242,16 +255,16 @@
         </div>
       </div>
       <!-- End modal aboutProject-->
-      <script src="js/jquery.js"></script>
-      <script src="js/jquery.maskedinput.min.js"></script>
-      <script src="js/modal.js"></script>
-      <script src="js/swiper-bundle.min.js"></script>
-      <script src="js/slider.js"></script>
-      <script src="js/select2.min.js"></script>
-      <script src="js/aos.js"></script>
-      <script src="js/fancybox.min.js"></script>
-      <script src="js/form.js"></script>
-      <script src="js/function.js"></script>
+      <script src="../js/jquery.js"></script>
+      <script src="../js/jquery.maskedinput.min.js"></script>
+      <script src="../js/modal.js"></script>
+      <script src="../js/swiper-bundle.min.js"></script>
+      <script src="../js/slider.js"></script>
+      <script src="../js/select2.min.js"></script>
+      <script src="../js/aos.js"></script>
+      <script src="../js/fancybox.min.js"></script>
+      <script src="../js/form.js"></script>
+      <script src="../js/function.js"></script>
     </div>
   </body>
 </html>

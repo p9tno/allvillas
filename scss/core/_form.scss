@@ -1,32 +1,36 @@
 .form {
-	&_grid {
-		display: flex;
-		flex-wrap: wrap;
-		margin: 0 -1em;
-
-		.form__row {
-			margin: 0 1em 2em;
-			width: 100%;
-
-			@media (min-width: 768px) {
-				width: calc(50% - 2em);
-			}
-
-			&_full {
-				width: 100%;
-			}
-		}
-	}
+	// &_grid {
+	// 	display: flex;
+	// 	flex-wrap: wrap;
+	// 	margin: 0 -1em;
+	//
+	// 	.form__row {
+	// 		margin: 0 1em 2em;
+	// 		width: 100%;
+	//
+	// 		@media (min-width: 768px) {
+	// 			width: calc(50% - 2em);
+	// 		}
+	//
+	// 		&_full {
+	// 			width: 100%;
+	// 		}
+	// 	}
+	// }
 
 	&__content {
-		background: #FFFFFF;
-		box-shadow: 0 1.25em 3.125em rgba(50, 63, 83, 0.3);
-		padding: 2.5em 3em 3em;
 		position: relative;
 	}
 
 	&__row {
-		margin-bottom: 1em;
+		margin-bottom: 0.625em;
+
+		&:last-child {
+			margin-bottom: 0;
+			@media (min-width: 768px) {
+				margin-top: 0.9375em;
+			}
+		}
 
 		.btn,
 		input:not([type]),
@@ -49,18 +53,22 @@
 
 	}
 
-	&__label {}
+	&__text {
+		line-height: 0.8;
+		@media (min-width: 768px) {
+			line-height: 1;
 
-	&__grup {}
-
-	&__check {
-		display: flex;
-		align-items: center;
+		}
 
 		span {
-			margin-left: 0.5em;
+			font-size: 0.4375em;
+			color: rgba($main_color, 0.5);
+			@media (min-width: 768px) {
+				font-size: 0.625em;
+			}
 		}
 	}
+
 	// Input text and textarea ================================================
 	input:not([type]),
 	input[type=date],
@@ -72,34 +80,41 @@
 	input[type=text],
 	input[type=url],
 	textarea {
-		background-color: $input_bg_color;
-		border: 0.0625em solid $input_border_color;
+		background-color: $color_primary;
+		border: 0.0625em solid;
+		border-color: $color_primary;
 		font-family: $main_font_family;
 		color: $input_color;
-		padding: 0.5em 1em;
 		outline: none;
-		font-size: 1em;
 		font-weight: 400;
-		border-radius: 0.3125em;
 		transition: 0.3s;
 
+		font-size: 0.75em;
+		padding: 1.75em 1.5em;
+		border-radius: 5.26em;
+		@media (min-width: 768px) {
+			font-size: 1.1875em;
+			padding: 1.685em 1.5em;
+			border-radius: 5.26em;
+
+		}
+
 		&:hover {
-			border: 0.0625em solid $input_hover_border_color;
-			background-color: $input_hover_bg_color;
+			background-color: transparent;
 		}
 
 		&:focus {
-			border: 0.0625em solid $input_focus_border_color;
-			background-color: $input_focus_bg_color;
+			background-color: transparent;
 		}
 
 		&.invalid {
-			background-color: $input_error_bg_color;
-			border: 0.0625em solid $input_error_border_color;
+			background-color: transparent;
+			border-color: $color_danger;
+
 		}
 		// Placeholder for input +++++++++++++++
 		@include placeholder {
-			color: $input_placeholder_color;
+			color: $main_color;
 		}
 	}
 

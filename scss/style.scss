@@ -18,6 +18,8 @@
 // @import 'core/pagination';
 
 @import 'core/buttons';
+@import 'sections/firstscreen';
+@import 'sections/choose';
 
 // @import 'core/video';
 // @import 'core/collapse';
@@ -27,3 +29,7 @@
 
 @import 'vendor/modal';
 // @import 'vendor/slick';
+
+.testButton__content {
+    max-width: 31.25em;
+}

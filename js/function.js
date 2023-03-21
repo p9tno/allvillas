@@ -17,24 +17,24 @@ $(document).ready(function() {
     // preloader();
     // setTimeout( ()=> preloader(),15000 )
 
-    function toggleCallback() {
-        $('.callback__toggle').click(function(event) {
-            $(this).removeClass('active');
-            $('.callback__content').addClass('active');
-        });
-        $(document).mouseup(function (e) {
-            let div = $(".callback");
-            if (!div.is(e.target) && div.has(e.target).length === 0) {
-                $('.callback__content').removeClass('active');
-                $('.callback__toggle').addClass('active');
-            }
-        });
-        $('.callback__close').on('click', function (e) {
-            e.preventDefault();
-            $('.callback__content').removeClass('active');
-            $('.callback__toggle').addClass('active');
-        });
-    };
+    // function toggleCallback() {
+    //     $('.callback__toggle').click(function(event) {
+    //         $(this).removeClass('active');
+    //         $('.callback__content').addClass('active');
+    //     });
+    //     $(document).mouseup(function (e) {
+    //         let div = $(".callback");
+    //         if (!div.is(e.target) && div.has(e.target).length === 0) {
+    //             $('.callback__content').removeClass('active');
+    //             $('.callback__toggle').addClass('active');
+    //         }
+    //     });
+    //     $('.callback__close').on('click', function (e) {
+    //         e.preventDefault();
+    //         $('.callback__content').removeClass('active');
+    //         $('.callback__toggle').addClass('active');
+    //     });
+    // };
     // toggleCallback();
 
 
@@ -60,7 +60,7 @@ $(document).ready(function() {
             $( 'body' ).removeClass( 'nav-open' );
         });
     }
-    // hideNav();
+    hideNav();
 
     function showModal() {
         $('.show_js').on('click', function (e) {
@@ -149,7 +149,7 @@ $(document).ready(function() {
             }
         }
     }
-    stikyMenu();
+    // stikyMenu();
 
     // start animate numbers
     function onVisible( selector, callback, repeat = false ) {
@@ -194,9 +194,9 @@ $(document).ready(function() {
     }
     // end animate numbers
 
-    // $(function(){
-    //     $(".tel").mask("+7 999 999 99 99");
-    // });
+    $(function(){
+        $(".tel").mask("+ 999 9 999 9999");
+    });
 
 
     function changeSlide() {

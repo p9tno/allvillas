@@ -4,14 +4,13 @@
 /* Header
   ----------------------------------------------------------------------------- */
 .header {
-	position: fixed;
+	position: absolute;
 	left: 0;
 	width: 100%;
 	z-index: 5;
 	top: 0.625em;
 	@media (min-width: 768px) {
 		top: 1.5em;
-
 	}
 
 	&__content {

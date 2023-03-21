@@ -1,6 +1,67 @@
 extends layout/layout.pug
 
+block variable
+    -var path = '';
+    //- -var classHeader = 'header_primary';
+    //- -var classScroll = 'main_scroll';
+    //- -var pageScroll = false;
+
 block content
+
+    // begin testNav
+    section#testNav.testNav.section(style="padding-top:10em;")
+        .container_center
+            h2.section__title
+                span Навиганция
+            ul(style="font-size:1.25em;")
+                li
+                    a(href="home") главная
+
+
+    // end testNav
+
+    // begin testButton
+    section#testButton.testButton.section
+        .container_center
+            h2.section__title
+                span Кнопки
+            .testButton__content
+                a.btn(href="#") Начать подбор
+
+                br
+                br
+                a.btn.btn_transparent(href="#") Узнать подробнее
+
+                br
+                br
+                a.btn.btn_whatsapp(href="#") Whatsapp
+                br
+                br
+                a.btn.btn_telegram(href="#") Telegram
+
+
+
+
+
+            //- h2.section__title
+            //-     span Модальные окна
+            //- .testButton__content
+            //-     // Button trigger modal compare
+            //-     a.btn.show_js(href="#compare") Сравнение наборов лабораторий по математике
+            //-     br
+            //-     br
+            //-     a.btn.show_js(href="#reportBug") Сообщить об ошибке
+            //-     br
+            //-     br
+            //-     a.btn.show_js(href="#bargain") Оформить покупку
+            //-     br
+            //-     br
+            //-     a.btn.videoModal_js(data-src="../media/video_1.mp4")
+            //-         span видео 1
+            //-     br
+            //-     br
+            //-     a.btn.videoModal_js(data-src="../media/video_2.mp4")
+            //-         span видео 2
 
     //- // begin programsInfo
     //- section.section

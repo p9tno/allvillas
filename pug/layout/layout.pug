@@ -20,6 +20,12 @@ html(lang="en")
         //- begin preloader
         //- .preloader__wrap#preloader
         //-     .preloader
+        //-         <div class="content">
+        //-             <div class="loading">
+        //-                 <p>loading</p>
+        //-                 <span></span>
+        //-             </div>
+        //-         </div>
         //- end preloader
 
         .wrapper
@@ -29,5 +35,7 @@ html(lang="en")
                 block content
 
             include footer.pug
+
+            include modal.pug
 
             include scripts.pug

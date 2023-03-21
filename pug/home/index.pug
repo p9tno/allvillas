@@ -1,0 +1,48 @@
+extends ../layout/layout.pug
+
+block variable
+    -var path = '../';
+
+
+
+block content
+    // begin firstscreen style="background-image: url('../img/project.webp')"
+    section#firstscreen.firstscreen.section
+        .firstscreen__img.img.desktop
+            img(src="../img/firstscreen_bg.webp", alt="alt")
+        .firstscreen__img.img.mobile
+            img(src="../img/firstscreen_bg_m.webp", alt="alt")
+        .container_center
+            .firstscreen__content
+                h1.section__title
+                    span Виллы 
+                    span и таунхаусы Дубая
+
+                    small Лучшие проекты для жизни и инвестирования
+                .firstscreen__btn
+                    a.btn(href="#") Начать подбор
+
+
+
+    // end firstscreen
+
+    // begin choose
+    section#choose.choose.section
+        .container_center
+            .choose__caption.desktop
+                h2.section__title
+                    span Выбирайте,<br>что подойдет<br>именно вам
+                .choose__label
+                    span 6 готовых подборок проектов
+            .choose__content
+                .choose__caption.mobile
+                    h2.section__title
+                        span Выбирайте,<br>что подойдет<br>именно вам
+                    .choose__label
+                        span 6 готовых подборок проектов
+                .choose__grid
+                    each item in [1,2,3,4,5,6]
+                        a(href="#modalChoose").choose__item.img.show_js
+                            img(src="../img/select_"+item+".webp" alt="alt")
+
+    // end choose

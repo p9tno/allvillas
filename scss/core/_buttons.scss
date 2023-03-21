@@ -1,68 +1,146 @@
 // Style for button and pseudo button for input and link
 
 .btn {
-	color: $btn_default_text_color;
+	display: inline-block;
+	width: 100%;
+
+	color: $color_white;
 	font-family: $main_font_family;
-	font-size: 1em;
-	font-weight: 400;
-	padding: 0.3125em 1em 0.4375em;
-	/* 5/16 */
-	/* 7/16 */
+	font-weight: 800;
+
 	border: none;
 	outline: none;
 	text-decoration: none;
-	display: inline-block;
-	background-color: $btn_default_bg_color;
+	background-color: $color_danger;
 	text-align: center;
-	max-width: 100%;
 	cursor: pointer;
-	border-radius: 0.3125em;
-	/* 5/16 */
+
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+
 	transition: 0.3s;
-	transition-property: background color border-color;
 
-	// градиент
-	// position: relative;
-	// z-index: 10;
-	// overflow: hidden;
-	//
-	// &:before {
-	// 	content: '';
-	// 	position: absolute;
-	// 	top: 0;
-	// 	left: 0;
-	// 	width: 100%;
-	// 	height: 100%;
-	// 	z-index: -1;
-	// 	transition: width 0.5s;
-	// 	background-image: linear-gradient(90deg, $color_seccondary 0%, #e8b7be 100%);
-	// }
-	//
-	// &:hover {
-	// 	background-color: #fff;
-	// 	color: $color_withe;
-	// 	text-decoration: none;
-	//
-	// 	&:before {
-	// 		width: 150%;
-	// 	}
-	// }
+	font-size: 0.6875em;
+	padding: 2.128em 3em;
+	border-radius: 9.1em;
 
-	&:hover {
-		background-color: $btn_default_bg_color_hover;
-		color: $btn_default_text_color;
+	@media (min-width: 768px) {
+		font-size: 0.9375em;
+		padding: 2.067em 3em;
+		border-radius: 6.7em;
 	}
 
-	&:active,
-	&:focus {
-		background-color: $btn_default_bg_color_active;
-		color: $btn_default_text_color;
+	&_lg {
+		@media (min-width: 768px) {
+			padding: 2.334em 3em;
+		}
+	}
+
+	&:hover {
+		background-color: $color_success;
+	}
+
+	&:active {
+		background-color: #2CA26A;
 	}
 
 	&:disabled {
-		color: red;
+		background-color: $color_primary;
 		cursor: not-allowed;
 		// pointer-events: none;
+	}
+
+	&_transparent {
+		width: auto;
+		max-width: 100%;
+		font-size: 0.875em;
+		font-weight: 500;
+		text-transform: none;
+		background-color: transparent;
+		border: 0.0625em solid $color_danger;
+		color: $color_danger;
+		border-radius: 7.125em;
+		padding: 1.473em 2.623em;
+		letter-spacing: 0;
+
+		&:hover {
+			color: $color_white;
+			background-color: $color_danger;
+
+		}
+
+		&:active {
+			background-color: darken($color_danger, 5%);
+			color: $color_white;
+
+		}
+	}
+
+	&_telegram,
+	&_whatsapp {
+		position: relative;
+		width: auto;
+		max-width: 100%;
+		text-transform: none;
+		background-color: transparent;
+		font-size: 0.875em;
+		font-weight: 500;
+		border-radius: 7.125em;
+		border: 0.0625em solid;
+		letter-spacing: 0;
+		padding: 1.473em 2.623em;
+
+		&:before {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0.85em;
+			font-family: 'icon';
+			font-size: 1.75em;
+		}
+
+		&:hover {
+			color: $color_white;
+		}
+	}
+
+	&_telegram {
+		color: $color_telegram;
+		border-color: $color_telegram;
+		padding-left: 4.5em;
+		padding-right: 2.79em;
+
+		&:before {
+			content: '\e906';
+		}
+
+		&:hover {
+			background-color: $color_telegram;
+		}
+
+		&:active {
+			background-color: darken($color_telegram, 5%);
+		}
+
+	}
+
+	&_whatsapp {
+		color: $color_whatsapp;
+		border-color: $color_whatsapp;
+		padding-left: 4.5em;
+		padding-right: 2.27em;
+
+		&:before {
+			content: '\e907';
+		}
+
+		&:hover {
+			background-color: $color_whatsapp;
+		}
+
+		&:active {
+			background-color: darken($color_whatsapp, 5%);
+		}
 	}
 
 }
