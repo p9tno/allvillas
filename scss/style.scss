@@ -6,6 +6,7 @@
 @import 'core/reset';
 @import 'core/template';
 @import 'core/preloader';
+@import 'core/filter';
 
 @import 'core/header';
 
@@ -20,6 +21,7 @@
 @import 'core/buttons';
 @import 'sections/firstscreen';
 @import 'sections/choose';
+@import 'sections/apartments';
 
 // @import 'core/video';
 // @import 'core/collapse';
@@ -28,7 +30,7 @@
 // @import 'core/programsInfo';
 
 @import 'vendor/modal';
-// @import 'vendor/slick';
+@import 'vendor/fancybox';
 
 .testButton__content {
     max-width: 31.25em;

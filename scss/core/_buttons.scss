@@ -53,15 +53,21 @@
 	&_transparent {
 		width: auto;
 		max-width: 100%;
-		font-size: 0.875em;
 		font-weight: 500;
 		text-transform: none;
 		background-color: transparent;
 		border: 0.0625em solid $color_danger;
 		color: $color_danger;
 		border-radius: 7.125em;
-		padding: 1.473em 2.623em;
 		letter-spacing: 0;
+
+		font-size: 0.625em;
+		padding: 1em 5.5em;
+		@media (min-width: 768px) {
+			font-size: 0.875em;
+			padding: 1.473em 2.623em;
+
+		}
 
 		&:hover {
 			color: $color_white;

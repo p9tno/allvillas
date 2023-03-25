@@ -47,23 +47,126 @@ block content
 
     // end choose
 
-    // begin choose
-    section#choose.choose.section
+    // begin apartments
+    section#apartments.apartments.section
         .container_center
-            .choose__caption.desktop
-                h2.section__title
-                    span Выбирайте,<br>что подойдет<br>именно вам
-                .choose__label
-                    span 6 готовых подборок проектов
-            .choose__content
-                .choose__caption.mobile
-                    h2.section__title
-                        span Выбирайте,<br>что подойдет<br>именно вам
-                    .choose__label
-                        span 6 готовых подборок проектов
-                .choose__grid
-                    each item in [1,2,3,4,5,6]
-                        a(href="#modalChoose").choose__item.img.show_js
-                            img(src="../img/select_"+item+".webp" alt="alt")
+            .apartments__filter
+                .filter#filter
+                    .filter__row
+                        .filter__col
+                            .filter__label
+                                span Цена, $
+                            .filter__price
+                                .filter__number.filter__number_from
 
-    // end choose
+                                    //- input.number_shipments_js(type="number" placeholder="0" min="0" max="1000" step="1")
+                                    label
+                                        span от
+                                    input(class="ranks_js" type="text" placeholder="100 000")
+
+                                .filter__number.filter__number_before
+                                    label 
+                                        span до
+                                    input(class="ranks_js" type="text" placeholder="10 000 000")
+
+
+                        .filter__col
+                            .filter__label
+                                span Количество спален
+                            ul.filter__list
+                                each item in ['2','3','4','5+']
+                                    li.filter__checkbox
+                                        input(type="checkbox" value="apartments-"+item+"" id="apartments_"+item+"")
+                                        label(for="apartments_"+item+"")
+                                            span=item
+
+                        .filter__col
+                            ul.filter__more            
+                                li.filter__checkbox.filter__checkbox_more
+                                    input(type="checkbox" value="coastline" id="coastline")
+                                    label(for="coastline")
+                                        span 1 береговая линия
+                                li.filter__checkbox.filter__checkbox_more
+                                    input(type="checkbox" value="pool" id="pool")
+                                    label(for="pool")
+                                        span Личный бассейн
+
+                        .filter__col
+                            .filter__select
+                                select.select(name="select" data-placeholder="По популярности")
+                                    option(value="")
+                                    option(value="default" selected="selected") По популярности
+                                    option(value="top") По возрастанию
+                                    option(value="bottom") По убыванию
+
+            .apartments__list
+
+                each item in ['', '', ]
+
+                    .apartments__item
+                        .apartments__gallery
+
+                            .apartments__img.img
+                                a(href="../img/slide_1.jpg" data-fancybox data-type="image")
+                                    img(src="../img/slide_1.jpg" loading="lazy" alt="img")
+
+                            .apartments__slider
+                                .swiper.apartments_swiper_js
+                                    .swiper-wrapper
+                                        each item in [2,3,4,2,3,4]
+                                            .swiper-slide
+                                                .apartments__img.img
+                                                    a(href="../img/slide_"+item+".jpg" data-fancybox data-type="image")
+                                                        img(src="../img/slide_"+item+".jpg" loading="lazy" alt="img")
+                                .apartments__arrows
+                                    i.icon_arrow_left
+                                    i.icon_arrow_right
+
+                        .apartments__content
+                            .apartments__header
+                                span Malta at<br> Damac Lagoons
+                            .apartments__main
+                                .details
+                                    .details__item
+                                        span IV 2024
+                                    .details__item.details__item_location
+                                        span Damac Lagoons
+
+                                p Элитная недвижимость в Дубаи — это возможность приобрести действительно эксклюзивное жилье, которое станет настоящим украшением вашего дома или офиса. Находясь в центре Дубая, вы имеете доступ ко всем необходимым для комфортной жизни услугам, включая рестораны, магазины, развлекательные центры и многое другое. 
+
+                                .digits
+                                    .digits__item
+                                        i.icon_area
+                                        span 350-450  
+                                        span &nbsp;м
+                                            sup 2
+                                        .apartments__reverse
+                                            span 1234-1234 
+                                            span фт 
+                                                sup 2
+
+                                    .digits__item
+                                        .digits__img.img
+                                            img(src="../img/bed.svg", alt="alt")
+                                        span 3-5 спален
+
+                            .apartments__footer
+                                .apartments__price
+                                    span от $
+                                    span 2 500 000
+                                    .apartments__reverse
+                                        span от 
+                                        span 9 500 000 &nbsp;
+                                        span AED
+                                .apartments__btn
+                                    a.btn.btn_transparent(href="#") Узнать подробнее
+
+
+
+
+
+
+
+
+
+    // end apartments
