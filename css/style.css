@@ -898,11 +898,10 @@ body {
   transition: 0.3s;
 }
 .header__nav .menu-item:hover a:after {
-  width: 80%;
+  border-color: #333333;
 }
 .header__nav .current-menu-item > a:after {
   border-color: #333333;
-  width: 80%;
 }
 .header__nav .social {
   margin-top: 5em;

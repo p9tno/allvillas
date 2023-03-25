@@ -170,8 +170,8 @@
 				&:hover {
 					a {
 						&:after {
-							// border-color: rgba($main_color, 1);
-							width: 80%;
+							border-color: rgba($main_color, 1);
+							// width: 80%;
 						}
 					}
 				}
@@ -182,7 +182,7 @@
 		.current-menu-item > a {
 			&:after {
 				border-color: rgba($main_color, 1);
-				width: 80%;
+				// width: 80%;
 			}
 
 		}
