@@ -46,3 +46,24 @@ block content
                             img(src="../img/select_"+item+".webp" alt="alt")
 
     // end choose
+
+    // begin choose
+    section#choose.choose.section
+        .container_center
+            .choose__caption.desktop
+                h2.section__title
+                    span Выбирайте,<br>что подойдет<br>именно вам
+                .choose__label
+                    span 6 готовых подборок проектов
+            .choose__content
+                .choose__caption.mobile
+                    h2.section__title
+                        span Выбирайте,<br>что подойдет<br>именно вам
+                    .choose__label
+                        span 6 готовых подборок проектов
+                .choose__grid
+                    each item in [1,2,3,4,5,6]
+                        a(href="#modalChoose").choose__item.img.show_js
+                            img(src="../img/select_"+item+".webp" alt="alt")
+
+    // end choose
