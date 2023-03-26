@@ -83,6 +83,14 @@ body {
 
 			}
 		}
+
+		&_sm {
+			span {
+				@media (min-width: 768px) {
+					font-size: 3.375em;
+				}
+			}
+		}
 	}
 }
 

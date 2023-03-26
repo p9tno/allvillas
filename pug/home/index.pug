@@ -159,14 +159,91 @@ block content
                                         span 9 500 000 &nbsp;
                                         span AED
                                 .apartments__btn
-                                    a.btn.btn_transparent(href="#") Узнать подробнее
-
-
-
-
-
-
+                                    a.btn.btn_transparent.show_js(href="#aboutProject") Узнать подробнее
 
 
 
     // end apartments
+
+    // begin partners
+    section#partners.partners.section
+        .container_center
+            .partners__list
+                each item in [1,2,3,4,5,6,7,8,9,10,11,12]
+                    .partners__item
+                        .partners__img.img
+                            img(src="../img/partners_"+item+".png", alt="alt")
+
+    // end partners
+
+    // begin payment
+    section#payment.payment.section
+        .container_center
+            .payment__caption.mobile
+                h2.section__title.section__title_sm
+                    span Для покупки<br> не нужно вносить<br> всю сумму сразу
+                .payment__desc
+                    span На все проекты есть беспроцентная рассрочка на весь срок строительства с комфортным планом платежей
+                .payment__label
+                    span Пример плана платежей:
+
+            .payment__content
+                .payment__caption.desktop
+                    h2.section__title.section__title_sm
+                        span Для покупки<br> не нужно вносить<br> всю сумму сразу
+                    .payment__desc
+                        span На все проекты есть беспроцентная рассрочка на весь срок строительства с комфортным планом платежей
+
+                .payment__wrap
+
+                    .payment__list
+                        each item in [{ number:'20%', name:'1-й платёж',bottom:'при бронировании' }, { number:'10%', name:'2-й платёж',bottom:'3 месяца' }, { number:'10%', name:'3-й платёж',bottom:'9 месяцев' }, { number:'10%', name:'4-й платёж',bottom:'12 месяцев' }, { number:'10%', name:'5-й платёж',bottom:'18 месяцев' }, { number:'10%', name:'6-й платёж',bottom:'24 месяца' }, { number:'10%', name:'7-й платёж',bottom:'30 месяцев' }, { number:'20%', name:'последний платёж',bottom:'при сдаче' }, ]
+
+
+                            .payment__item
+                                .payment__top
+                                    .payment__info
+                                        span=item.number
+                                        p=item.name
+                                .payment__bottom
+                                    span=item.bottom
+
+                    .payment__label.desktop 
+                        span Пример плана платежей
+
+            .payment__more
+                p рассрочка до <span>4</span> лет
+                p <span>0%</span> переплат
+
+
+    // end payment
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //- test
