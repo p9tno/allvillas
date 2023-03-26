@@ -258,7 +258,7 @@ $(document).ready(function() {
             let options = $(this).data('options') || {};
             let $parent = $(this).parent();
             let swiperDefaults = {
-                // speed: 500,
+                speed: 500,
                 // centeredSlides: true,
                 loop : true,
                 // autoplay: {
@@ -293,6 +293,50 @@ $(document).ready(function() {
 
     }
     addSliders();
+
+    const experts = new Swiper('.experts_swiper_js', {
+        speed: 500,
+        centeredSlides: true,
+        // loop: true,
+        // autoplay: {
+        //     delay: 5000,
+        // },
+
+        // freeMode: true,
+        // watchSlidesProgress: true,
+        //
+        // mousewheel: {
+        //     forceToAxis: true,
+        // },
+
+
+        slidesPerView: 3,
+        spaceBetween: 15,
+
+        breakpoints: {
+            501: {
+                slidesPerView: 3,
+                spaceBetween: 195,
+                navigation: {
+                    nextEl: '.icon_arrow_right_lg',
+                    prevEl: '.icon_arrow_left_lg',
+                },
+
+            },
+
+        }
+    });
+
+    experts.on('slideChange', function (e) {
+    let currentSlide = e.realIndex;
+
+    console.log(currentSlide);
+    // console.log(e);
+    console.log(e.slides.length);
+    // let currentItem = $('.advantage__menu').find(`[data-index='${currentSlide}']`);
+    // $('.advantage__item').removeClass('active');
+    // currentItem.addClass('active');
+});
 
     function digits_int(target){
         val = $(target).val().replace(/[^0-9]/g, '');

@@ -218,6 +218,130 @@ block content
 
     // end payment
 
+    // begin relevant
+    section#relevant.relevant.section
+        .container_center
+            h2.section__title
+                span В нашей базе более 
+                span 30 актуальных 
+                span проектов
+                    small всех вилл<br>и таунхаусов Дубая
+            .relevant__wrap
+                .relevant__content
+                    .relevant__title
+                        span Не знаете какой<br> подойдет именно вам?
+                    .relevant__text
+                        span Пройдите короткий опрос, укажите интересующие параметры, и эксперт проекта индивидуально подберет проекты под ваш запрос и отправит подборку мессенджер или на почту.
+                    .relevant__btn
+                        a.btn(href="#") Пройти опрос и получить подборку
+                    .relevant__label.mobile
+                        span 1-2 минуты время прохождения
+
+                .relevant__preview
+                    .relevant__img.img
+                        img(src="../img/relevant_img.webp", alt="alt")
+                    .hint.desktop
+                        .hint__content
+                            span 1-2 минуты время прохождения
+
+
+
+    // end relevant
+
+    // begin experts
+    section#experts.experts.section
+        .container_center
+            h2.section__title
+                span Что говорят эксперты рынка
+            .experts__label
+                .experts__flag.img
+                    img(src="../img/UAE.png", alt="alt")
+                span недвижимости Дубая
+
+        .experts__slider
+            .swiper.experts_swiper_js
+                .swiper-wrapper
+                    each item in ['', '', '', ]
+
+                        .swiper-slide
+                            .experts__content
+                                .experts__top
+                                    .experts__title
+                                        span Почему формат вилл и таунхаусов становится более популярен?
+                                    .experts__text
+                                        p Элитная недвижимость в Дубаи — это возможность приобрести действительно эксклюзивное жилье, которое станет настоящим украшением вашего дома или офиса. Вы сможете любоваться видами на море, находясь при этом в тишине и покое. Находясь в центре Дубая, вы имеете доступ ко всем необходимым для комфортной жизни услугам, включая рестораны, магазины и многое другое. 
+                                        p Все элитные дома в Дубае отличаются безупречным качеством, а также высоким уровнем комфорта.
+
+                                    .experts__btn
+                                        a.btn.btn_transparent(href="#") Читать статью полностью
+
+                                .experts__bottom
+                                    .experts__manager
+                                        .experts__img.img
+                                            img(src="../img/manager.webp", alt="alt")
+                                        .experts__info
+                                            i Анна
+                                            span эксперт<br> недвижимости<br> в Дубае
+
+                    .swiper-slide
+                        .experts__content.experts__content_last
+                            .experts__last
+                                .experts__title
+                                    span Узнайте подробнее<br>о виллах в Дубае<br>в нашем блоге
+                                .experts__btn
+                                    a.btn(href="#") Перейти в блог
+                            .experts__masc.img.desktop
+                                img(src="../img/experts_masc.webp", alt="alt")
+
+
+                .experts__arrows.desktop
+                    i.icon_arrow_left_lg
+                    i.icon_arrow_right_lg
+
+
+                .swiper_label.mobile
+                    span тяните
+
+
+
+
+
+
+    // end experts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
