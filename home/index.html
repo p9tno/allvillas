@@ -11,6 +11,15 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css"/>
   </head>
   <body>
+    <div class="preloader__wrap" id="preloader">
+      <div class="preloader"><div class="content">
+<div class="loading">
+<p>loading</p>
+<span></span>
+</div>
+</div>
+      </div>
+    </div>
     <div class="wrapper">
       <header class="header">
         <div class="header__content">
@@ -30,7 +39,7 @@
             <div class="header__col desktop"> 
               <div class="switch">
                 <label class="switch__label">
-                  <input type="checkbox" id="themeCheckbox" name="themeCheckbox"/><span><i></i></span>
+                  <input type="checkbox" id="languageCheckbox" name="languageCheckbox"/><span><i></i></span>
                 </label>
               </div>
             </div>
@@ -46,7 +55,7 @@
           <nav class="navbar">
             <ul class="menu">
               <li class="menu-item current-menu-item"><a href="#">Главная</a></li>
-              <li class="menu-item"><a href="#">Готовые подборки проектов</a></li>
+              <li class="menu-item scroll_js"><a href="#apartments">Готовые подборки проектов</a></li>
               <li class="menu-item"><a href="#">Подбор виллы / таунхауса</a></li>
               <li class="menu-item"><a href="#">Полный каталог проектов</a></li>
               <li class="menu-item"><a href="#">Блог</a></li>
@@ -74,7 +83,7 @@
         <section class="choose section" id="choose">
           <div class="container_center">
             <div class="choose__caption desktop">
-              <h2 class="section__title"><span>Выбирайте,<br>что подойдет<br>именно вам</span></h2>
+              <h2 class="section__title" data-aos="fade-up"><span>Выбирайте,<br>что подойдет<br>именно вам</span></h2>
               <div class="choose__label"><span>6 готовых подборок проектов</span></div>
             </div>
             <div class="choose__content">
@@ -82,7 +91,7 @@
                 <h2 class="section__title"><span>Выбирайте,<br>что подойдет<br>именно вам</span></h2>
                 <div class="choose__label"><span>6 готовых подборок проектов</span></div>
               </div>
-              <div class="choose__grid"><a class="choose__item img show_js" href="#modalChoose"><img src="../img/select_1.webp" alt="alt"/></a><a class="choose__item img show_js" href="#modalChoose"><img src="../img/select_2.webp" alt="alt"/></a><a class="choose__item img show_js" href="#modalChoose"><img src="../img/select_3.webp" alt="alt"/></a><a class="choose__item img show_js" href="#modalChoose"><img src="../img/select_4.webp" alt="alt"/></a><a class="choose__item img show_js" href="#modalChoose"><img src="../img/select_5.webp" alt="alt"/></a><a class="choose__item img show_js" href="#modalChoose"><img src="../img/select_6.webp" alt="alt"/></a>
+              <div class="choose__grid"><a class="choose__item img show_js" href="#modalChoose"><img data-ru="../img/select_1.webp" data-en="../img/no_img.png" src="" alt="alt"/></a><a class="choose__item img show_js" href="#modalChoose"><img data-ru="../img/select_2.webp" data-en="../img/no_img.png" src="" alt="alt"/></a><a class="choose__item img show_js" href="#modalChoose"><img data-ru="../img/select_3.webp" data-en="../img/no_img.png" src="" alt="alt"/></a><a class="choose__item img show_js" href="#modalChoose"><img data-ru="../img/select_4.webp" data-en="../img/no_img.png" src="" alt="alt"/></a><a class="choose__item img show_js" href="#modalChoose"><img data-ru="../img/select_5.webp" data-en="../img/no_img.png" src="" alt="alt"/></a><a class="choose__item img show_js" href="#modalChoose"><img data-ru="../img/select_6.webp" data-en="../img/no_img.png" src="" alt="alt"/></a>
               </div>
             </div>
           </div>
@@ -184,7 +193,7 @@
                   </div>
                 </div>
                 <div class="apartments__content">
-                  <div class="apartments__header"><span>Malta at<br> Damac Lagoons</span></div>
+                  <div class="apartments__header"><span data-title="Malta at Damac Lagoons" data-subject-title="Malta at Damac Lagoons">Malta at Damac Lagoons</span></div>
                   <div class="apartments__main">
                     <div class="details">
                       <div class="details__item"><span>IV 2024</span></div>
@@ -238,7 +247,7 @@
                   </div>
                 </div>
                 <div class="apartments__content">
-                  <div class="apartments__header"><span>Malta at<br> Damac Lagoons</span></div>
+                  <div class="apartments__header"><span data-title="Malta at Damac" data-subject-title="Malta at Damac">Malta at Damac</span></div>
                   <div class="apartments__main">
                     <div class="details">
                       <div class="details__item"><span>IV 2024</span></div>
@@ -270,40 +279,40 @@
         <section class="partners section" id="partners">
           <div class="container_center">
             <div class="partners__list">
-              <div class="partners__item">
+              <div class="partners__item" data-aos="zoom-in">
                 <div class="partners__img img"><img src="../img/partners_1.png" alt="alt"/></div>
               </div>
-              <div class="partners__item">
+              <div class="partners__item" data-aos="zoom-in">
                 <div class="partners__img img"><img src="../img/partners_2.png" alt="alt"/></div>
               </div>
-              <div class="partners__item">
+              <div class="partners__item" data-aos="zoom-in">
                 <div class="partners__img img"><img src="../img/partners_3.png" alt="alt"/></div>
               </div>
-              <div class="partners__item">
+              <div class="partners__item" data-aos="zoom-in">
                 <div class="partners__img img"><img src="../img/partners_4.png" alt="alt"/></div>
               </div>
-              <div class="partners__item">
+              <div class="partners__item" data-aos="zoom-in">
                 <div class="partners__img img"><img src="../img/partners_5.png" alt="alt"/></div>
               </div>
-              <div class="partners__item">
+              <div class="partners__item" data-aos="zoom-in">
                 <div class="partners__img img"><img src="../img/partners_6.png" alt="alt"/></div>
               </div>
-              <div class="partners__item">
+              <div class="partners__item" data-aos="zoom-in">
                 <div class="partners__img img"><img src="../img/partners_7.png" alt="alt"/></div>
               </div>
-              <div class="partners__item">
+              <div class="partners__item" data-aos="zoom-in">
                 <div class="partners__img img"><img src="../img/partners_8.png" alt="alt"/></div>
               </div>
-              <div class="partners__item">
+              <div class="partners__item" data-aos="zoom-in">
                 <div class="partners__img img"><img src="../img/partners_9.png" alt="alt"/></div>
               </div>
-              <div class="partners__item">
+              <div class="partners__item" data-aos="zoom-in">
                 <div class="partners__img img"><img src="../img/partners_10.png" alt="alt"/></div>
               </div>
-              <div class="partners__item">
+              <div class="partners__item" data-aos="zoom-in">
                 <div class="partners__img img"><img src="../img/partners_11.png" alt="alt"/></div>
               </div>
-              <div class="partners__item">
+              <div class="partners__item" data-aos="zoom-in">
                 <div class="partners__img img"><img src="../img/partners_12.png" alt="alt"/></div>
               </div>
             </div>
@@ -326,68 +335,68 @@
               <div class="payment__wrap">
                 <div class="payment__list">
                   <div class="payment__item">
-                    <div class="payment__top">
+                    <div class="payment__top" data-aos="fade-up" data-aos-delay="400">
                       <div class="payment__info"><span>20%</span>
                         <p>1-й платёж</p>
                       </div>
                     </div>
-                    <div class="payment__bottom"><span>при бронировании</span></div>
+                    <div class="payment__bottom" data-aos="fade-up" data-aos-delay="700"><span>при бронировании</span></div>
                   </div>
                   <div class="payment__item">
-                    <div class="payment__top">
+                    <div class="payment__top" data-aos="fade-up" data-aos-delay="350">
                       <div class="payment__info"><span>10%</span>
                         <p>2-й платёж</p>
                       </div>
                     </div>
-                    <div class="payment__bottom"><span>3 месяца</span></div>
+                    <div class="payment__bottom" data-aos="fade-up" data-aos-delay="700"><span>3 месяца</span></div>
                   </div>
                   <div class="payment__item">
-                    <div class="payment__top">
+                    <div class="payment__top" data-aos="fade-up" data-aos-delay="300">
                       <div class="payment__info"><span>10%</span>
                         <p>3-й платёж</p>
                       </div>
                     </div>
-                    <div class="payment__bottom"><span>9 месяцев</span></div>
+                    <div class="payment__bottom" data-aos="fade-up" data-aos-delay="700"><span>9 месяцев</span></div>
                   </div>
                   <div class="payment__item">
-                    <div class="payment__top">
+                    <div class="payment__top" data-aos="fade-up" data-aos-delay="250">
                       <div class="payment__info"><span>10%</span>
                         <p>4-й платёж</p>
                       </div>
                     </div>
-                    <div class="payment__bottom"><span>12 месяцев</span></div>
+                    <div class="payment__bottom" data-aos="fade-up" data-aos-delay="700"><span>12 месяцев</span></div>
                   </div>
                   <div class="payment__item">
-                    <div class="payment__top">
+                    <div class="payment__top" data-aos="fade-up" data-aos-delay="200">
                       <div class="payment__info"><span>10%</span>
                         <p>5-й платёж</p>
                       </div>
                     </div>
-                    <div class="payment__bottom"><span>18 месяцев</span></div>
+                    <div class="payment__bottom" data-aos="fade-up" data-aos-delay="700"><span>18 месяцев</span></div>
                   </div>
                   <div class="payment__item">
-                    <div class="payment__top">
+                    <div class="payment__top" data-aos="fade-up" data-aos-delay="150">
                       <div class="payment__info"><span>10%</span>
                         <p>6-й платёж</p>
                       </div>
                     </div>
-                    <div class="payment__bottom"><span>24 месяца</span></div>
+                    <div class="payment__bottom" data-aos="fade-up" data-aos-delay="700"><span>24 месяца</span></div>
                   </div>
                   <div class="payment__item">
-                    <div class="payment__top">
+                    <div class="payment__top" data-aos="fade-up" data-aos-delay="100">
                       <div class="payment__info"><span>10%</span>
                         <p>7-й платёж</p>
                       </div>
                     </div>
-                    <div class="payment__bottom"><span>30 месяцев</span></div>
+                    <div class="payment__bottom" data-aos="fade-up" data-aos-delay="700"><span>30 месяцев</span></div>
                   </div>
                   <div class="payment__item">
-                    <div class="payment__top">
+                    <div class="payment__top" data-aos="fade-up" data-aos-delay="50">
                       <div class="payment__info"><span>20%</span>
                         <p>последний платёж</p>
                       </div>
                     </div>
-                    <div class="payment__bottom"><span>при сдаче</span></div>
+                    <div class="payment__bottom" data-aos="fade-up" data-aos-delay="700"><span>при сдаче</span></div>
                   </div>
                 </div>
                 <div class="payment__label desktop"> <span>Пример плана платежей</span></div>
@@ -412,8 +421,8 @@
                 <div class="relevant__label mobile"><span>1-2 минуты время прохождения</span></div>
               </div>
               <div class="relevant__preview">
-                <div class="relevant__img img"><img src="../img/relevant_img.webp" alt="alt"/></div>
-                <div class="hint desktop">
+                <div class="relevant__img img"><img data-ru="../img/relevant_img.webp" data-en="../img/no_img.png" src="" alt="alt"/></div>
+                <div class="hint desktop" data-aos="fade-left" data-aos-delay="300">
                   <div class="hint__content"><span>1-2 минуты время прохождения</span></div>
                 </div>
               </div>
@@ -424,7 +433,7 @@
         <!-- begin experts-->
         <section class="experts section" id="experts">
           <div class="container_center">
-            <h2 class="section__title"><span>Что говорят эксперты рынка</span></h2>
+            <h2 class="section__title" data-aos="fade-up"><span>Что говорят эксперты рынка</span></h2>
             <div class="experts__label">
               <div class="experts__flag img"><img src="../img/UAE.png" alt="alt"/></div><span>недвижимости Дубая</span>
             </div>
@@ -497,11 +506,57 @@
                 </div>
               </div>
               <div class="experts__arrows desktop"><i class="icon_arrow_left_lg"></i><i class="icon_arrow_right_lg"></i></div>
-              <div class="swiper_label mobile"><span>тяните</span></div>
+              <div class="swiper_label mobile d_left swiper_label_js"><span>тяните</span></div>
             </div>
           </div>
         </section>
         <!-- end experts-->
+        <!-- begin catalog-->
+        <section class="catalog section" id="catalog">
+          <div class="container_center">
+            <div class="catalog__content">
+              <div class="catalog__caption">
+                <h2 class="section__title desktop"><span data-aos="fade-right" data-aos-delay="0">Скачайте</span><span data-aos="fade-right" data-aos-delay="100">полный</span><span data-aos="fade-right" data-aos-delay="200" data-pdf="pdf • 12мб">каталог</span></h2>
+                <h2 class="section__title mobile"><span>Скачайте полный каталог</span></h2>
+                <div class="catalog__desc"><span>всех вилл и таунхаусов Дубая</span></div>
+              </div>
+              <div class="catalog__form">
+                <form class="form" action="send.php">
+                  <input type="hidden" name="subject" value="форма в футоре"/>
+                  <input type="hidden" name="notspam" value=""/>
+                  <div class="form__row">
+                    <input type="text" placeholder="Имя"/>
+                  </div>
+                  <div class="form__row">
+                    <input class="tel" type="text" required="required" placeholder="+"/>
+                  </div>
+                  <div class="form__row">
+                    <button class="btn btn_lg" type="submit">Получить каталог</button>
+                  </div>
+                  <div class="form__row">
+                    <div class="form__text"><span>Нажимая на кнопку вы соглашаетесь с условиями обработки данных и политикой конфиденциальности</span></div>
+                  </div>
+                </form>
+              </div>
+              <div class="catalog__bg" style="background-image: url('../img/catalog.webp')">
+                <div class="hint" data-aos="fade-up" data-aos-delay="400">
+                  <div class="hint__content"><span>35 проектов с планировками, ценами и описаниями</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end catalog-->
+        <!-- begin feedback-->
+        <section class="feedback section" id="feedback">
+          <div class="container_center">
+            <h2 class="section__title" data-aos="fade-up"><span>Не нашли то,<br>что искали?</span></h2>
+            <div class="feedback__content"><span>Напишите нам и мы ответим на ваш вопрос</span>
+              <div class="feedback__action"><a class="btn btn_whatsapp" target="_blank" href="https://wa.me/">Whatsapp</a><a class="btn btn_telegram" target="_blank" href="https://t.me/">Telegram</a></div>
+            </div>
+          </div>
+        </section>
+        <!-- end feedback-->
       </main>
       <footer class="footer">
         <div class="footer__content">
@@ -643,17 +698,17 @@
         <div class="modal-dialog">
           <div class="modal-content"><a class="modal-close" href="#" data-dismiss="modal"><i class="icon_close"></i></a>
             <div class="modal-title"><span>Узнайте<br>подробнее о проекте</span></div>
-            <div class="modal-project_title"><span>Malta at Damac Lagoons</span></div>
+            <div class="modal-project_title"><span class="modal_title_js">Malta at Damac Lagoons</span></div>
             <div class="modal-subtitle desktop"><span>Оставьте свои контактные данные, и мы пришлем<br> вам презентацию проекта и расскажем о деталях</span></div>
             <div class="modal-subtitle mobile"><span>Оставьте свои контактные данные,<br>и мы пришлем вам подборку</span></div>
             <div class="modal-body">
               <!-- begin form-->
               <div class="form__content">
                 <form class="form" action="send.php">
-                  <input type="hidden" name="subject" value="форма в футоре"/>
+                  <input class="subject_js" type="hidden" name="subject" value=""/>
                   <input type="hidden" name="notspam" value=""/>
                   <div class="form__row">
-                    <input class="tel" type="text" required="required" placeholder="+"/>
+                    <input class="tel" type="text" name="phone" required="required" placeholder="+"/>
                   </div>
                   <div class="form__row">
                     <button class="btn btn_lg" type="submit">Узнать о проекте</button>

@@ -165,7 +165,7 @@
             .modal-title
                 span Узнайте<br>подробнее о проекте
             .modal-project_title
-                span Malta at Damac Lagoons
+                span(class="modal_title_js") Malta at Damac Lagoons
 
             .modal-subtitle.desktop
                 span Оставьте свои контактные данные, и мы пришлем<br> вам презентацию проекта и расскажем о деталях
@@ -176,14 +176,11 @@
                 // begin form
                 .form__content
                     form.form(action="send.php")
-                        input(type="hidden" name="subject" value="форма в футоре")
+                        input(class="subject_js" type="hidden" name="subject" value="")
                         input(type="hidden" name="notspam" value="")
 
-                        //- .form__row
-                        //-     input(type="text" placeholder="Имя")
-
                         .form__row
-                            input.tel(type="text" required placeholder="+")
+                            input.tel(type="text" name="phone" required placeholder="+")
 
                         .form__row
                             button.btn.btn_lg(type="submit") Узнать о проекте

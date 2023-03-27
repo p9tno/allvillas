@@ -1,6 +1,6 @@
 block variable
     -var path = '';
-    //- -var page = true;
+    -var footer_sm = false;
     //- -var page = 'bg';
     //- -var leadmagnet = true;
 
@@ -18,14 +18,14 @@ html(lang="en")
         link(rel="stylesheet", type="text/css", href=path +"css/style.css")
     body
         //- begin preloader
-        //- .preloader__wrap#preloader
-        //-     .preloader
-        //-         <div class="content">
-        //-             <div class="loading">
-        //-                 <p>loading</p>
-        //-                 <span></span>
-        //-             </div>
-        //-         </div>
+        .preloader__wrap#preloader
+            .preloader
+                <div class="content">
+                    <div class="loading">
+                        <p>loading</p>
+                        <span></span>
+                    </div>
+                </div>
         //- end preloader
 
         .wrapper
@@ -34,7 +34,14 @@ html(lang="en")
             main.main_content
                 block content
 
-            include footer.pug
+
+            if footer_sm
+                //- code
+                include footer2.pug
+            else
+                //- code
+                include footer.pug
+
 
             include modal.pug
 

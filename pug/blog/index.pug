@@ -1,0 +1,68 @@
+extends ../layout/layout.pug
+
+block variable
+    -var path = '../';
+
+
+
+block content
+
+    // begin breadcrumbs
+    .breadcrumbs.section.desktop
+        .container_center
+            .kama_breadcrumbs
+                span
+                    a(href="#")
+                        span Главная
+
+                span.kb_sep
+
+                span.kb_title Блог
+
+    // end breadcrumbs
+
+
+    // begin experts
+    section#experts.experts.experts_page.section
+        .container_center
+            h2.section__title
+                span Что говорят эксперты рынка
+            .experts__label
+                .experts__flag.img
+                    img(src="../img/UAE.png", alt="alt")
+                span недвижимости Дубая
+        .container_center.container_center_sm
+            .experts__list
+
+                each item in ['', '', '', '', '']
+
+
+                    // start item
+                    .experts__item
+                        .experts__content
+                            .experts__top
+                                .experts__title
+                                    span Почему формат вилл и таунхаусов становится более популярен?
+                                .experts__text
+                                    p Элитная недвижимость в Дубаи — это возможность приобрести действительно эксклюзивное жилье, которое станет настоящим украшением вашего дома или офиса. Вы сможете любоваться видами на море, находясь при этом в тишине и покое. Находясь в центре Дубая, вы имеете доступ ко всем необходимым для комфортной жизни услугам, включая рестораны, магазины и многое другое. 
+                                    p Все элитные дома в Дубае отличаются безупречным качеством, а также высоким уровнем комфорта.
+
+                                .experts__btn
+                                    a.btn.btn_transparent(href="#") Читать статью полностью
+
+                            .experts__bottom
+                                .experts__manager
+                                    .experts__img.img
+                                        img(src="../img/manager.webp", alt="alt")
+                                    .experts__info
+                                        i Анна
+                                        span эксперт<br> недвижимости<br> в Дубае
+
+                    // end item
+
+
+            .experts__more
+                a.btn(href="#") Показать ещё
+
+
+    // end experts

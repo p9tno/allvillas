@@ -4,28 +4,12 @@ body {
 	font-family: $main_font_family;
 	color: $main_color;
 	line-height: $main_line_height;
-	// display: flex;
-	// flex-direction: column;
 	font-size: calc(.04444445 * 100vw + 0px);
-	// height: auto;
-	// min-height: 100%;
-	// color: $color_withe;
-
 	background-color: $color_primary;
-
-	// font-size: calc(.034 * 100vw + 0px);
 
 	@media (min-width: 768px) {
 		font-size: calc(.008333334 * 100vw + 0px);
 	}
-
-	@media (min-width: 1200px) {
-		// font-size: calc(.00838 * 100vw + 0px);
-	}
-
-	// @media (min-width: 1600px) {
-	// 	font-size: $main_font_size;
-	// }
 
 }
 //
@@ -59,10 +43,19 @@ body {
 		padding: 0 1em;
 
 	}
+
+	&_sm {
+		@media (min-width: 768px) {
+			max-width: 74.5em;
+		}
+	}
 }
 
 .section {
-	padding: 5em 0 7.5em;
+	padding: 2em 0;
+	@media (min-width: 768px) {
+		padding: 5em 0 7.5em;
+	}
 
 	&__title {
 		font-family: $second_font_family;
@@ -122,13 +115,22 @@ body {
 	&__content {
 		position: relative;
 		background-color: $color_white;
-		width: 12.5em;
 		padding: 1.0625em 2.1875em 1.0625em 1.875em;
-		line-height: 1.15;
 		border-radius: 0.375em;
+		width: 8em;
+		line-height: 0.8;
+		@media (min-width: 768px) {
+			line-height: 1.15;
+			width: 12.5em;
+
+		}
 
 		span {
-			font-size: 0.875em;
+			font-size: 0.625em;
+			@media (min-width: 768px) {
+				font-size: 0.875em;
+
+			}
 		}
 
 		&:before {
@@ -144,9 +146,6 @@ body {
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
-
 		}
-
 	}
-
 }

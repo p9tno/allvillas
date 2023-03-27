@@ -70,6 +70,8 @@
 // }
 
 .preloader {
+    overflow: hidden;
+
     &__wrap {
         position: fixed;
         width: 100%;

@@ -30,7 +30,7 @@ block content
     section#choose.choose.section
         .container_center
             .choose__caption.desktop
-                h2.section__title
+                h2.section__title(data-aos="fade-up")
                     span Выбирайте,<br>что подойдет<br>именно вам
                 .choose__label
                     span 6 готовых подборок проектов
@@ -43,7 +43,7 @@ block content
                 .choose__grid
                     each item in [1,2,3,4,5,6]
                         a(href="#modalChoose").choose__item.img.show_js
-                            img(src="../img/select_"+item+".webp" alt="alt")
+                            img(data-ru="../img/select_"+item+".webp" data-en="../img/no_img.png" src="" alt="alt")
 
     // end choose
 
@@ -101,7 +101,7 @@ block content
 
             .apartments__list
 
-                each item in ['', '', ]
+                each item in ['Malta at Damac Lagoons', 'Malta at Damac', ]
 
                     .apartments__item
                         .apartments__gallery
@@ -124,7 +124,7 @@ block content
 
                         .apartments__content
                             .apartments__header
-                                span Malta at<br> Damac Lagoons
+                                span(data-title=""+item+"" data-subject-title=""+item+"")!=item
                             .apartments__main
                                 .details
                                     .details__item
@@ -170,7 +170,7 @@ block content
         .container_center
             .partners__list
                 each item in [1,2,3,4,5,6,7,8,9,10,11,12]
-                    .partners__item
+                    .partners__item(data-aos="zoom-in")
                         .partners__img.img
                             img(src="../img/partners_"+item+".png", alt="alt")
 
@@ -197,15 +197,15 @@ block content
                 .payment__wrap
 
                     .payment__list
-                        each item in [{ number:'20%', name:'1-й платёж',bottom:'при бронировании' }, { number:'10%', name:'2-й платёж',bottom:'3 месяца' }, { number:'10%', name:'3-й платёж',bottom:'9 месяцев' }, { number:'10%', name:'4-й платёж',bottom:'12 месяцев' }, { number:'10%', name:'5-й платёж',bottom:'18 месяцев' }, { number:'10%', name:'6-й платёж',bottom:'24 месяца' }, { number:'10%', name:'7-й платёж',bottom:'30 месяцев' }, { number:'20%', name:'последний платёж',bottom:'при сдаче' }, ]
+                        each item in [{delay: '400', number:'20%', name:'1-й платёж',bottom:'при бронировании' }, {delay: '350', number:'10%', name:'2-й платёж',bottom:'3 месяца' }, {delay: '300', number:'10%', name:'3-й платёж',bottom:'9 месяцев' }, {delay: '250', number:'10%', name:'4-й платёж',bottom:'12 месяцев' }, {delay: '200', number:'10%', name:'5-й платёж',bottom:'18 месяцев' }, {delay: '150', number:'10%', name:'6-й платёж',bottom:'24 месяца' }, {delay: '100', number:'10%', name:'7-й платёж',bottom:'30 месяцев' }, {delay: '50', number:'20%', name:'последний платёж',bottom:'при сдаче' }, ]
 
 
                             .payment__item
-                                .payment__top
+                                .payment__top(data-aos="fade-up" data-aos-delay=""+item.delay+"")
                                     .payment__info
                                         span=item.number
                                         p=item.name
-                                .payment__bottom
+                                .payment__bottom(data-aos="fade-up" data-aos-delay="700")
                                     span=item.bottom
 
                     .payment__label.desktop 
@@ -239,8 +239,8 @@ block content
 
                 .relevant__preview
                     .relevant__img.img
-                        img(src="../img/relevant_img.webp", alt="alt")
-                    .hint.desktop
+                        img(data-ru="../img/relevant_img.webp" data-en="../img/no_img.png" src="", alt="alt")
+                    .hint.desktop(data-aos="fade-left" data-aos-delay="300")
                         .hint__content
                             span 1-2 минуты время прохождения
 
@@ -251,7 +251,7 @@ block content
     // begin experts
     section#experts.experts.section
         .container_center
-            h2.section__title
+            h2.section__title(data-aos="fade-up")
                 span Что говорят эксперты рынка
             .experts__label
                 .experts__flag.img
@@ -299,75 +299,62 @@ block content
                     i.icon_arrow_right_lg
 
 
-                .swiper_label.mobile
+                .swiper_label.mobile.d_left.swiper_label_js
                     span тяните
-
-
-
-
 
 
     // end experts
 
+    // begin catalog
+    section#catalog.catalog.section
+        .container_center
+            .catalog__content
+                .catalog__caption
+
+                    h2.section__title.desktop
+                        span(data-aos="fade-right" data-aos-delay="0") Скачайте
+                        span(data-aos="fade-right" data-aos-delay="100") полный
+                        span(data-aos="fade-right" data-aos-delay="200")(data-pdf="pdf • 12мб") каталог
+                    h2.section__title.mobile
+                        span Скачайте полный каталог
+                    .catalog__desc
+                        span всех вилл и таунхаусов Дубая
+
+                .catalog__form
+                    form.form(action="send.php")
+                        input(type="hidden" name="subject" value="форма в футоре")
+                        input(type="hidden" name="notspam" value="")
+
+                        .form__row
+                            input(type="text" placeholder="Имя")
+
+                        .form__row
+                            input.tel(type="text" required placeholder="+")
+
+                        .form__row
+                            button.btn.btn_lg(type="submit") Получить каталог
+
+                        .form__row
+                            .form__text
+                                span Нажимая на кнопку вы соглашаетесь с условиями обработки данных и политикой конфиденциальности
+                .catalog__bg(style="background-image: url('../img/catalog.webp')")
+                    .hint(data-aos="fade-up" data-aos-delay="400")
+                        .hint__content
+                            span 35 проектов с планировками, ценами и описаниями
 
 
 
+    // end catalog
 
+    // begin feedback
+    section#feedback.feedback.section
+        .container_center
+            h2.section__title(data-aos="fade-up")
+                span Не нашли то,<br>что искали?
+            .feedback__content
+                span Напишите нам и мы ответим на ваш вопрос
+                .feedback__action
+                    a.btn.btn_whatsapp(target="_blank" href="https://wa.me/") Whatsapp
+                    a.btn.btn_telegram(target="_blank" href="https://t.me/") Telegram
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //- test
+    // end feedback

@@ -1,23 +1,4 @@
 .form {
-	// &_grid {
-	// 	display: flex;
-	// 	flex-wrap: wrap;
-	// 	margin: 0 -1em;
-	//
-	// 	.form__row {
-	// 		margin: 0 1em 2em;
-	// 		width: 100%;
-	//
-	// 		@media (min-width: 768px) {
-	// 			width: calc(50% - 2em);
-	// 		}
-	//
-	// 		&_full {
-	// 			width: 100%;
-	// 		}
-	// 	}
-	// }
-
 	&__content {
 		position: relative;
 	}
@@ -84,7 +65,7 @@
 		border: 0.0625em solid;
 		border-color: $color_primary;
 		font-family: $main_font_family;
-		color: $input_color;
+		color: $main_color;
 		outline: none;
 		font-weight: 400;
 		transition: 0.3s;
@@ -135,87 +116,4 @@
 		appearance: textfield;
 	}
 
-	// Input checkbox and radio ===============================================
-	input[type=checkbox],
-	input[type=radio] {
-		padding: 0;
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		flex: none;
-		height: 0.875em;
-		/* 14/16 */
-		width: 0.875em;
-		/* 14/16 */
-		color: #aaa;
-		background: 0 0;
-		border: 0.0625em solid;
-		/* 1/16 */
-		overflow: hidden;
-		vertical-align: middle;
-		appearance: none;
-		outline: 0;
-		text-align: center;
-		position: relative;
-
-		&:not(:disabled),
-		&:not(:disabled) {
-			cursor: pointer;
-		}
-
-		&:before,
-		&:before {
-			display: block;
-		}
-
-		&:disabled,
-		&:disabled {
-			color: #ddd;
-		}
-	}
-
-	input[type=radio] {
-		border-radius: 50%;
-
-		&:checked:before {
-			content: '';
-			width: 0.375em;
-			/* 6/16 */
-			height: 0.375em;
-			/* 6/16 */
-			display: block;
-			border-radius: 50%;
-			background: #000;
-		}
-
-		&:disabled:checked:before {
-			background-color: #aaa;
-		}
-	}
-
-	input[type=checkbox] {
-		&:checked:before,
-		&:indeterminate:before {
-			content: "";
-			width: 40%;
-			height: 60%;
-			color: #000;
-			margin-top: -0.1875em;
-			/* 3/16 */
-			border-right: 0.0625em solid;
-			/* 1/16 */
-			border-bottom: 0.0625em solid;
-			/* 1/16 */
-			transform: rotate(45deg);
-		}
-
-		&:indeterminate:before {
-			content: "";
-		}
-
-		&:disabled:checked:before,
-		&:disabled:indeterminate:before {
-			color: #aaa;
-		}
-	}
 }

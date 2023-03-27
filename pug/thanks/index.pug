@@ -1,0 +1,22 @@
+extends ../layout/layout.pug
+
+block variable
+    -var path = '../';
+    -var footer_sm = true;
+
+
+
+
+block content
+    // begin thanks
+    section#thanks.thanks.section
+        .container_center
+            h1.section__title
+                span Мы получили вашу заявку, благодарим за доверие
+            .thanks__content
+                span В ближайшее время с вами свяжется наш специалист по недвижимости и отправит вам подборку на указанный номер телефона
+
+            .thanks__btn
+                a.btn(href="#") На главную
+
+    // end thanks

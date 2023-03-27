@@ -1,7 +1,7 @@
 .relevant {
-    @media (max-width: 767px) {
-        padding-top: 1.25em;
 
+    @media (max-width: 767px) {
+        padding-top: 4.375em;
     }
 
     .section__title {
@@ -143,18 +143,4 @@
             font-size: 0.625em;
         }
     }
-
 }
-
-.section {
-    &__title {}
-
-}
-
-.container_center {}
-
-.img {}
-
-.desktop {}
-
-.btn {}

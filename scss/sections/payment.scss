@@ -1,4 +1,8 @@
 .payment {
+    @media (max-width: 767px) {
+        padding-top: 4.375em;
+    }
+
     &__caption {
         text-align: center;
         margin-bottom: 0.9375em;

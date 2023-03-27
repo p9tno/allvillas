@@ -1,0 +1,22 @@
+extends ../layout/layout.pug
+
+block variable
+    -var path = '../';
+    -var footer_sm = true;
+
+
+
+
+block content
+    // begin notfound
+    section#notfound.notfound.section
+        .container_center
+            h1.notfound__title
+                span 404
+            .notfound__content
+                span страница не найдена
+            .notfound__btn
+                a.btn(href="#") На главную
+
+
+    // end notfound

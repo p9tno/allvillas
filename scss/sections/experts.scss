@@ -6,6 +6,14 @@
     .container_center {
         position: relative;
     }
+
+    &_page {
+        padding-top: 6.25em;
+        @media (min-width: 768px) {
+            padding-top: 3.875em;
+        }
+    }
+
     overflow: hidden;
 
     &__label {
@@ -34,8 +42,6 @@
     }
 
     &__slider {
-        // border: 1px solid #000;
-
         position: relative;
         left: 50%;
         transform: translateX(-50%);
@@ -76,7 +82,6 @@
             @media (max-width: 767px) {
                 justify-content: center;
             }
-            // padding: 0 0 0 5.9375em;
             @media (min-width: 768px) {
                 flex-direction: row;
                 padding: 0 0 0 5.9375em;
@@ -138,7 +143,6 @@
     }
 
     &__text {
-        // line-height: 1.25;
         @media (min-width: 768px) {
             line-height: 1.35;
 
@@ -305,6 +309,8 @@
                 font-family: 'icon';
                 color: $color_success;
                 font-weight: bold;
+                opacity: 1;
+                transition: 0.3s;
             }
 
             &:before {
@@ -318,6 +324,74 @@
             }
         }
 
+        &.d_left {
+            span {
+                &:before {
+                    opacity: 0;
+                }
+            }
+        }
+
+        &.d_right {
+            span {
+                &:after {
+                    opacity: 0;
+                }
+            }
+        }
+
+    }
+
+    &__list {
+        margin-top: 1.25em;
+        @media (min-width: 768px) {
+            margin-top: 2.5em;
+
+        }
+    }
+
+    &__item {
+        margin-bottom: 1.25em;
+        @media (min-width: 768px) {
+            margin-bottom: 1.875em;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .experts__content {
+            margin: 0 auto;
+            min-height: auto;
+        }
+    }
+
+    &__more {
+        margin-top: 2.5em;
+        text-align: center;
+        @media (min-width: 768px) {
+            margin-top: 7.5em;
+
+        }
+
+        .btn {
+            position: relative;
+
+            &:after {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 2.5em;
+                content: '\e905';
+                font-family: 'icon';
+
+            }
+            width: 24em;
+            @media (min-width: 768px) {
+                width: auto;
+                padding: 2.4em 8.332em;
+            }
+        }
     }
 
 }

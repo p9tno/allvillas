@@ -2,11 +2,11 @@ $(document).ready(function() {
 
     function preloader() {
         $(()=>{
-
+            $('body').addClass( 'nav-open' );
             setTimeout( () => {
                 let p = $('#preloader');
                 p.addClass('hide');
-
+                $('body').removeClass( 'nav-open' );
                 setTimeout( () => {
                     p.remove()
                 },1000);
@@ -14,33 +14,10 @@ $(document).ready(function() {
             },1000);
         });
     }
-    // preloader();
-    // setTimeout( ()=> preloader(),15000 )
-
-    // function toggleCallback() {
-    //     $('.callback__toggle').click(function(event) {
-    //         $(this).removeClass('active');
-    //         $('.callback__content').addClass('active');
-    //     });
-    //     $(document).mouseup(function (e) {
-    //         let div = $(".callback");
-    //         if (!div.is(e.target) && div.has(e.target).length === 0) {
-    //             $('.callback__content').removeClass('active');
-    //             $('.callback__toggle').addClass('active');
-    //         }
-    //     });
-    //     $('.callback__close').on('click', function (e) {
-    //         e.preventDefault();
-    //         $('.callback__content').removeClass('active');
-    //         $('.callback__toggle').addClass('active');
-    //     });
-    // };
-    // toggleCallback();
-
+    preloader();
 
     function toggleNav() {
         $('.hamburger').click(function(event) {
-            // console.log('Показ меню');
             $('.hamburger').toggleClass('hamburger_open');
             $('.header__nav').toggleClass('header__nav_open');
             $( 'body' ).toggleClass( 'nav-open' );
@@ -62,44 +39,42 @@ $(document).ready(function() {
     }
     hideNav();
 
+    function scroolToSection() {
+        $(".scroll_js").on("click", 'a', function (event) {
+            event.preventDefault();
+            let id  = $(this).attr('href');
+            console.log(id);
+
+            let top = $(id).offset().top-70;
+            $('body,html').animate({scrollTop: top}, 1500);
+            $('.hamburger').removeClass('hamburger_open');
+            $('.header__nav').removeClass('header__nav_open');
+            $( 'body' ).removeClass( 'nav-open' );
+        });
+    };
+    scroolToSection();
+
     function showModal() {
         $('.show_js').on('click', function (e) {
             e.preventDefault();
+
+            let item = $(this).closest('.apartments__item');
+            let title = item.find('.apartments__header span').attr('data-title');
+            let subject_title = item.find('.apartments__header span').attr('data-subject-title');
+
+
+            let modal_title = $('.modal_title_js');
+            let modal_subject = $('.subject_js');
+
+            modal_title.text(title);
+            modal_subject.val(subject_title);
+
             let id  = $(this).attr('href');
             $(id).modal('show');
 
-            let item = $(this);
-            let src = item.find('img').attr('data-src');
-            let title = item.find('.apartments__title span').attr('data-title');
-            let m2 = item.find('.m2_js').attr('data-m2');
-            let ft = item.find('.ft_js').attr('data-ft');
-            let aed = item.find('.aed_js').attr('data-aed');
-            let dollar = item.find('.dollar_js').attr('data-dollar');
-            console.log(src);
-
-
-            let modal_src_js = $('.modal_src_js');
-            let modal_title_js = $('.modal_title_js');
-            let modal_m2_js = $('.modal_m2_js');
-            let modal_ft_js = $('.modal_ft_js');
-            let modal_aed_js = $('.modal_aed_js');
-            let modal_dollar_js = $('.modal_dollar_js');
-
-            modal_src_js.attr("src", src);
-            modal_title_js.text(title);
-            modal_m2_js.text(m2);
-            modal_ft_js.text(ft);
-            modal_aed_js.text(aed);
-            modal_dollar_js.text(dollar);
-
-
-            $("#thisApartment").on('hide.bs.modal', function () {
-                modal_src_js.attr("src", '');
-                modal_title_js.html('');
-                modal_m2_js.html('');
-                modal_ft_js.html('');
-                modal_aed_js.html('');
-                modal_dollar_js.html('');
+            $("#aboutProject").on('hide.bs.modal', function () {
+                modal_title.html('');
+                modal_subject.val('');
             });
 
         });
@@ -149,91 +124,11 @@ $(document).ready(function() {
             }
         }
     }
-    // stikyMenu();
-
-    // start animate numbers
-    // function onVisible( selector, callback, repeat = false ) {
-    //
-    // let options = {
-    //     threshold: [ 0.5 ]
-    // };
-    // let observer = new IntersectionObserver( onEntry, options );
-    // let elements = document.querySelectorAll( selector );
-    //
-    // for ( let elm of elements ) {
-    //     observer.observe( elm );
-    // }
-    //
-    // function onEntry( entry ) {
-    //     entry.forEach( change => {
-    //         let elem = change.target;
-    //         // console.log(change);
-    //         // console.log(elem.innerHTML);
-    //         if ( change.isIntersecting ) {
-    //             if ( !elem.classList.contains( 'show' ) || repeat ) {
-    //                 elem.classList.add( 'show' );
-    //                 callback( elem );
-    //             }
-    //         }
-    //     } );
-    // }
-    // }
-    //
-    // onVisible( '.percent__number span', function ( e ) {
-    //     animateNumber( e, e.innerHTML );
-    // } );
-    //
-    // function animateNumber( elem, final, duration = 2000 ) {
-    //     let start = 0;
-    //     // console.log('init');
-    //     setInterval( function () {
-    //         if ( final >= start ) {
-    //             elem.innerHTML = start++;
-    //         }
-    //     }, duration / final );
-    // }
-    // end animate numbers
+    stikyMenu();
 
     $(function(){
         $(".tel").mask("+ 999 9 999 9999");
     });
-
-
-    // function changeSlide() {
-    //     let el = $('.slide__img');
-    //
-    //     $( ".slide_js" ).slider({
-    //         range: "min",
-    //         value: 1000,
-    //         min: 0,
-    //         max: 5000,
-    //         step: 1,
-    //         slide: function( event, ui ) {
-    //             console.log(ui.value/100);
-    //             el.css({
-    //                 transform: `translateX(-${ui.value/100}%)`
-    //             })
-    //
-    //         }
-    //     });
-    //
-    // };
-    // changeSlide();
-
-
-
-    function scroolToSection() {
-        $(".menu__link,.scroll_js").on("click", function (event) {
-            event.preventDefault();
-            let id  = $(this).attr('href');
-            let top = $(id).offset().top-70;
-            $('body,html').animate({scrollTop: top}, 1500);
-            $('.hamburger').removeClass('hamburger_open');
-            $('.header__nav').removeClass('header__nav_open');
-            $( 'body' ).removeClass( 'nav-open' );
-        });
-    };
-    // scroolToSection();
 
     // https://github.com/michalsnik/aos
     AOS.init({
@@ -328,15 +223,22 @@ $(document).ready(function() {
     });
 
     experts.on('slideChange', function (e) {
-    let currentSlide = e.realIndex;
+        let currentSlide = (e.realIndex + 1);
+        let slides = e.slides.length;
+        let el = $('.swiper_label_js');
 
-    console.log(currentSlide);
-    // console.log(e);
-    console.log(e.slides.length);
-    // let currentItem = $('.advantage__menu').find(`[data-index='${currentSlide}']`);
-    // $('.advantage__item').removeClass('active');
-    // currentItem.addClass('active');
-});
+        if (slides == currentSlide) {
+            el.addClass('d_right');
+        } else {
+            el.removeClass('d_right');
+        }
+
+        if (currentSlide > 1) {
+            el.removeClass('d_left');
+        } else if (currentSlide = 1) {
+            el.addClass('d_left');
+        }
+    });
 
     function digits_int(target){
         val = $(target).val().replace(/[^0-9]/g, '');
@@ -368,5 +270,45 @@ $(document).ready(function() {
     });
 
     // console.log($('[data-fancybox]'));
+
+    function changelanguage () {
+        // localStorage.clear();
+        // console.log(localStorage.getItem("language"));
+        if (!localStorage.getItem("language")) {
+            localStorage.setItem("language", "ru");
+        }
+
+        changeImgSrc(localStorage.getItem("language"));
+
+        $('input[name=languageCheckbox]').change(function() {
+            if ($(this).is(':checked')) {
+                localStorage.setItem("language", "en");
+                console.log(localStorage.getItem("language"));
+                changeImgSrc(localStorage.getItem("language"));
+
+            } else {
+                localStorage.setItem("language", "ru");
+                console.log(localStorage.getItem("language"));
+                changeImgSrc(localStorage.getItem("language"));
+            }
+        });
+
+        function changeImgSrc(language) {
+            console.log('init');
+
+            let item = $('[data-'+language+']');
+            item.each(function(index, el) {
+                let src = $(this).attr('data-'+language+'');
+                console.log(src);
+                $(this).attr('src', src);
+            });
+        }
+
+        if (localStorage.getItem("language") == "en") {
+            $('input[name=languageCheckbox]').prop('checked', true);
+            $('input[name=languageCheckboxThanks]').prop('checked', true);
+        }
+    }
+    changelanguage ();
 
 })

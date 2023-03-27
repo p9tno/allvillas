@@ -1,0 +1,45 @@
+// Breadcrumb ==================================================================
+
+.breadcrumbs {
+    padding-bottom: 0;
+    padding-top: 7.5em;
+
+    .kama_breadcrumbs {
+        font-size: 0.875em;
+
+        a,
+        span {
+            color: rgba(#C5C3C1, 1);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        span {
+            > a {
+                > span {
+                    font-size: 1em;
+                }
+            }
+        }
+
+        .kb_sep {
+
+            transform: translateY(-0.15em);
+            display: inline-flex;
+            margin: 0 1.4286em;
+            width: 0.25em;
+            height: 0.25em;
+            background-color: rgba($color_success, 1);
+            border-radius: 50%;
+            font-size: 1em;
+        }
+
+        .kb_title {
+            color: $color_success;
+        }
+
+    }
+
+}

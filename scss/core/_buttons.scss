@@ -89,12 +89,18 @@
 		max-width: 100%;
 		text-transform: none;
 		background-color: transparent;
-		font-size: 0.875em;
 		font-weight: 500;
 		border-radius: 7.125em;
 		border: 0.0625em solid;
 		letter-spacing: 0;
-		padding: 1.473em 2.623em;
+
+		font-size: 0.75em;
+		padding: 1em 2.623em;
+		@media (min-width: 768px) {
+			padding: 1.473em 2.623em;
+			font-size: 0.875em;
+
+		}
 
 		&:before {
 			position: absolute;
