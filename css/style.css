@@ -1656,9 +1656,12 @@ body {
   margin: 0 1.4286em;
   width: 0.25em;
   height: 0.25em;
-  background-color: #3eaf79;
   border-radius: 50%;
   font-size: 1em;
+  background-color: #c5c3c1;
+}
+.breadcrumbs .kama_breadcrumbs .kb_sep:nth-child(4) {
+  background-color: #3eaf79;
 }
 .breadcrumbs .kama_breadcrumbs .kb_title {
   color: #3EAF79;
