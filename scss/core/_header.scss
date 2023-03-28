@@ -7,7 +7,7 @@
 	z-index: 5;
 	top: 0.625em;
 	transition: 0.3s;
-	@media (min-width: 768px) {
+	@media (min-width: 501px) {
 		top: 1.5em;
 	}
 
@@ -25,7 +25,7 @@
 		border-radius: 2.1875em;
 
 		padding: 0.3125em 0.3125em 0.3125em 1.375em;
-		@media (min-width: 768px) {
+		@media (min-width: 501px) {
 			padding: 0.625em 1.5em 0.625em 0.625em;
 
 		}
@@ -33,7 +33,7 @@
 	}
 
 	&__col {
-		@media (min-width: 768px) {
+		@media (min-width: 501px) {
 			&:nth-child(1) {
 				order: 2;
 				margin-left: -11em;
@@ -54,7 +54,7 @@
 	}
 
 	.logo {
-		@media (min-width: 768px) {
+		@media (min-width: 501px) {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
@@ -66,13 +66,13 @@
 			width: 4.375em;
 			height: 3.125em;
 			font-size: 0.8em;
-			@media (min-width: 768px) {
+			@media (min-width: 501px) {
 				font-size: 1em;
 			}
 		}
 
 		&__label {
-			@media (min-width: 768px) {
+			@media (min-width: 501px) {
 				display: flex;
 				align-items: center;
 
@@ -107,7 +107,7 @@
 
 		overflow-y: auto;
 
-		@media (min-width: 768px) {
+		@media (min-width: 501px) {
 			width: 39.5em;
 			padding: 8.75em 1em 2em 18.5em;
 			box-shadow: 0 75px 150px rgba(51, 51, 51, 0.1);
@@ -127,7 +127,7 @@
 			padding: 0;
 			list-style: none;
 			text-align: center;
-			@media (min-width: 768px) {
+			@media (min-width: 501px) {
 				text-align: left;
 				display: flex;
 				flex-direction: column;
@@ -135,7 +135,7 @@
 
 			&-item {
 				margin-bottom: 1.25em;
-				@media (min-width: 768px) {
+				@media (min-width: 501px) {
 					margin-bottom: 1.5em;
 
 				}
@@ -148,7 +148,7 @@
 					position: relative;
 					text-decoration: none;
 					color: $main_color;
-					@media (min-width: 768px) {
+					@media (min-width: 501px) {
 						font-size: 1.1875em;
 
 					}
@@ -251,7 +251,7 @@
 }
 
 .switch {
-	@media (min-width: 768px) {
+	@media (min-width: 501px) {
 		display: flex;
 
 		&:hover {
@@ -381,7 +381,7 @@
 		color: $main_color;
 		margin: 0 0.2774em;
 
-		@media (min-width: 768px) {
+		@media (min-width: 501px) {
 			margin: 0 0.5em;
 
 			&:first-child {
@@ -445,7 +445,7 @@
 // stiky menu
 .stiky {
 	top: 0.25em;
-	@media (min-width: 768px) {
+	@media (min-width: 501px) {
 		top: 0.5em;
 	}
 

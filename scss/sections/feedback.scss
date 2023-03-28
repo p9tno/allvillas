@@ -2,7 +2,7 @@
     padding-top: 0;
     margin-top: -3em;
     padding-bottom: 3.4375em;
-    @media (min-width: 768px) {
+    @media (min-width: 501px) {
         margin-top: -2em;
         padding-bottom: 8.75em;
 
@@ -16,14 +16,14 @@
 
     &__content {
         margin-top: 0.625em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-top: 1.5625em;
 
         }
 
         span {
             font-size: 0.875em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 1.1875em;
 
             }
@@ -32,7 +32,7 @@
 
     &__action {
         margin-top: 1em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-top: 1.875em;
 
         }

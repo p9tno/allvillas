@@ -9,7 +9,7 @@
 
     &_page {
         padding-top: 6.25em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             padding-top: 3.875em;
         }
     }
@@ -21,14 +21,14 @@
         align-items: center;
         justify-content: center;
         margin-top: 0.625em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-right: 6em;
             justify-content: flex-end;
         }
 
         span {
             font-size: 0.875em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 1.1875em;
             }
         }
@@ -47,7 +47,7 @@
         transform: translateX(-50%);
         margin-top: 1.25em;
         width: 56.25em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-top: 2.5em;
             width: 241.875em;
         }
@@ -67,7 +67,7 @@
         flex-direction: column;
         justify-content: space-between;
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             width: 72.5em;
             padding: 1.25em 3.4375em 1.25em 1.25em;
             min-height: 31.25em;
@@ -79,10 +79,10 @@
         }
 
         &_last {
-            @media (max-width: 767px) {
+            @media (max-width: 500px) {
                 justify-content: center;
             }
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 flex-direction: row;
                 padding: 0 0 0 5.9375em;
                 overflow: hidden;
@@ -90,11 +90,11 @@
 
             .experts__last {
                 width: 100%;
-                @media (min-width: 768px) {
+                @media (min-width: 501px) {
                     width: 23.75em;
                 }
 
-                @media (max-width: 767px) {
+                @media (max-width: 500px) {
                     .experts__title {
                         span {
                             font-size: 1.25em;
@@ -105,7 +105,7 @@
 
             }
 
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 .experts__masc {
                     flex: none;
                     width: 41.875em;
@@ -118,7 +118,7 @@
 
     &__top {
         margin-bottom: 1.25em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-bottom: 0;
             width: 47.5em;
         }
@@ -127,7 +127,7 @@
     &__title {
         line-height: 1.1;
         margin-bottom: 0.75em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-bottom: 1.25em;
 
         }
@@ -135,7 +135,7 @@
         span {
             font-weight: 300;
             font-size: 0.875em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 2.125em;
 
             }
@@ -143,14 +143,14 @@
     }
 
     &__text {
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             line-height: 1.35;
 
         }
 
         p {
             font-size: 0.75em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 1.1875em;
 
             }
@@ -159,17 +159,17 @@
 
     &__btn {
         margin-top: 1.25em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-top: 1.5625em;
         }
     }
 
     &__bottom {
-        @media (max-width: 767px) {
+        @media (max-width: 500px) {
             padding-top: 1.75em;
             border-top: 0.0625em solid $color_primary;
         }
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             flex: none;
             display: flex;
             align-items: center;
@@ -184,13 +184,13 @@
     }
 
     &__manager {
-        @media (max-width: 767px) {
+        @media (max-width: 500px) {
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: left;
         }
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             text-align: center;
 
         }
@@ -205,7 +205,7 @@
         height: 3.4375em;
         margin: 0 0.625em 0 0;
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             width: 5em;
             height: 5em;
             margin: 0 auto 0.25em;
@@ -216,7 +216,7 @@
     &__info {
         line-height: 0.8;
         width: 7.5em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             line-height: 1;
             width: auto;
         }
@@ -227,7 +227,7 @@
             font-style: italic;
 
             font-size: 1.75em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 2.5em;
                 margin-bottom: 0.3em;
 
@@ -238,13 +238,13 @@
         span {
 
             font-size: 0.625em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 0.75em;
             }
 
             br {
                 display: none;
-                @media (min-width: 768px) {
+                @media (min-width: 501px) {
                     display: inline;
                 }
             }
@@ -254,7 +254,7 @@
 
     &__arrows {
 
-        @media (min-width: 768px) {
+        @media (min-width: 1200px) {
             i {
                 font-size: 5em;
                 position: absolute;
@@ -266,6 +266,7 @@
                 opacity: 1;
                 visibility: visible;
                 transition: 0.3s;
+                outline: none;
 
                 &:hover {
                     color: rgba($main_color, 0.2);
@@ -288,6 +289,9 @@
     }
 
     .swiper_label {
+        @media (min-width: 1200px) {
+            display: none;
+        }
 
         margin-top: 0.9375em;
         text-align: center;
@@ -344,7 +348,7 @@
 
     &__list {
         margin-top: 1.25em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-top: 2.5em;
 
         }
@@ -352,7 +356,7 @@
 
     &__item {
         margin-bottom: 1.25em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-bottom: 1.875em;
         }
 
@@ -369,7 +373,7 @@
     &__more {
         margin-top: 2.5em;
         text-align: center;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-top: 7.5em;
 
         }
@@ -387,7 +391,7 @@
 
             }
             width: 24em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 width: auto;
                 padding: 2.4em 8.332em;
             }

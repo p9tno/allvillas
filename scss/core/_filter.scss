@@ -1,6 +1,6 @@
 .filter {
     &__row {
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             display: flex;
             flex-wrap: wrap;
             align-items: flex-end;
@@ -8,7 +8,7 @@
     }
 
     &__col {
-        @media (max-width: 767px) {
+        @media (max-width: 500px) {
             margin-bottom: 1.25em;
 
             &:nth-child(2) {
@@ -21,7 +21,7 @@
 
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             &:nth-child(1) {
                 width: 30%;
             }
@@ -51,7 +51,7 @@
         letter-spacing: 0.02em;
         margin-bottom: 0.5625em;
         text-align: center;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             text-align: left;
         }
 
@@ -64,7 +64,7 @@
     &__price {
         display: flex;
         justify-content: center;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             justify-content: flex-start;
         }
 
@@ -78,14 +78,14 @@
         label {
             letter-spacing: 0.02em;
             margin-right: 0.3125em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 margin-right: 0.5625em;
 
             }
 
             span {
                 font-size: 0.875em;
-                @media (min-width: 768px) {
+                @media (min-width: 501px) {
                     font-size: 1.1875em;
 
                 }
@@ -116,7 +116,7 @@
             font-size: 0.875em;
             padding: 0.715em 0.86em;
             border-radius: 7.125em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 1.1875em;
                 padding: 1.158em 1em;
                 border-radius: 5.26em;
@@ -192,7 +192,7 @@
             transition: 0.3s;
             width: 2.5em;
             height: 2.5em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 width: 4.375em;
                 height: 4.375em;
 
@@ -203,14 +203,14 @@
             span {
                 font-weight: 500;
                 font-size: 0.875em;
-                @media (min-width: 768px) {
+                @media (min-width: 501px) {
                     font-size: 1.125em;
 
                 }
             }
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             &:hover {
                 label {
                     color: $color_white;
@@ -227,7 +227,7 @@
         list-style: none;
         display: flex;
         justify-content: center;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             justify-content: flex-start;
         }
 
@@ -252,7 +252,7 @@
                 font-size: 0.625em;
                 padding: 0.614em 1.125em 0.614em 2.75em;
 
-                @media (min-width: 768px) {
+                @media (min-width: 501px) {
                     font-size: 0.875em;
 
                 }
@@ -276,7 +276,7 @@
     &__select {
         margin: 0 auto;
         width: 10em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin: 0 0 0 auto;
             width: 12.5em;
 
@@ -348,7 +348,7 @@
                             padding-bottom: 1.25em;
                         }
 
-                        @media (min-width: 768px) {
+                        @media (min-width: 501px) {
                             padding: 1em 1.5em;
                             font-size: 0.875em;
                         }
@@ -411,7 +411,7 @@
                     padding: 1.125em 1.5em;
                     font-size: 0.75em;
 
-                    @media (min-width: 768px) {
+                    @media (min-width: 501px) {
                         padding: 2em 1.5em;
                         font-size: 0.875em;
 
@@ -451,7 +451,7 @@
                                     height: 100%;
                                     padding-bottom: 0.3em;
                                     width: 3em;
-                                    @media (min-width: 768px) {
+                                    @media (min-width: 501px) {
                                         width: 5em;
 
                                     }

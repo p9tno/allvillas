@@ -15,7 +15,7 @@
             font-weight: 200;
 
             font-size: 8em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 14.25em;
 
             }
@@ -25,13 +25,13 @@
 
     &__content {
         margin: 0.75em 0 3em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin: 2em 0 4em;
         }
 
         span {
             font-size: 0.875em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 1.1875em;
             }
         }
@@ -40,7 +40,7 @@
     &__btn {
         .btn {
             width: 23.637em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 width: 25.334em;
 
             }

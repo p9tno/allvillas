@@ -1,14 +1,14 @@
 .apartments {
     background-color: $color_white;
     padding-top: 1.5em;
-    @media (min-width: 768px) {
+    @media (min-width: 501px) {
         padding-top: 4.375em;
 
     }
 
     &__filter {
         margin-bottom: 2.1875em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-bottom: 3.5em;
 
         }
@@ -18,7 +18,7 @@
 
     &__item {
         margin-bottom: 1.25em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-bottom: 6.25em;
 
         }
@@ -26,7 +26,7 @@
         &:last-child {
             margin-bottom: 0;
         }
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -34,7 +34,7 @@
     }
 
     &__gallery {
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             width: 38.125em;
         }
     }
@@ -44,7 +44,7 @@
         width: 100%;
         height: 13.75em;
         border-radius: 0.625em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             width: 38.125em;
             height: 25em;
             border-radius: 0.9375em;
@@ -57,7 +57,7 @@
         margin: 0.625em auto 0;
         width: 18.125em;
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin: 1.25em auto 0;
             width: 32.5em;
         }
@@ -65,7 +65,7 @@
         .apartments__img {
             width: 5.625em;
             height: 3.75em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 width: 10em;
                 height: 6.5625em;
             }
@@ -81,7 +81,7 @@
             font-size: 1.25em;
             cursor: pointer;
             outline: none;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 2em;
                 transition: 0.3s;
 
@@ -94,7 +94,7 @@
 
         .icon_arrow_left {
             left: -1.25em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 left: -1.4em;
 
             }
@@ -102,7 +102,7 @@
 
         .icon_arrow_right {
             right: -1.25em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 right: -1.4em;
 
             }
@@ -111,7 +111,7 @@
 
     &__content {
         padding-top: 0.9375em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             padding-top: 0;
             width: 41.875em;
         }
@@ -123,7 +123,7 @@
         line-height: 0.95;
         margin-bottom: 1em;
         text-align: center;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-bottom: 0.75em;
             text-align: left;
         }
@@ -132,7 +132,7 @@
             font-family: $second_font_family;
             font-size: 1.875em;
             font-weight: 300;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 3.375em;
 
             }
@@ -145,7 +145,7 @@
             text-align: center;
             font-size: 0.75em;
             margin: 1.25em 0 2.5em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 text-align: left;
                 font-size: 1.1875em;
                 margin: 1.4em 0;
@@ -169,7 +169,7 @@
         border-top: 0.0625em solid $color_primary;
         text-align: center;
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             text-align: left;
             margin-top: 3.75em;
             display: flex;
@@ -185,7 +185,7 @@
         span {
             font-size: 1.25em;
             font-weight: 300;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 2.125em;
 
             }
@@ -195,7 +195,7 @@
             bottom: -1.25em;
             left: 50%;
             transform: translateX(-50%);
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 bottom: -0.875em;
                 left: 0.1875em;
                 transform: none;
@@ -206,7 +206,7 @@
 
     &__btn {
         margin-top: 2.1875em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-top: 0;
         }
     }
@@ -217,7 +217,7 @@
     display: flex;
     justify-content: center;
     font-size: 0.75em;
-    @media (min-width: 768px) {
+    @media (min-width: 501px) {
         justify-content: flex-start;
         font-size: 1em;
     }
@@ -257,7 +257,7 @@
 .digits {
     display: flex;
     justify-content: center;
-    @media (min-width: 768px) {
+    @media (min-width: 501px) {
         justify-content: flex-start;
 
     }
@@ -267,7 +267,7 @@
 
         &:first-child {
             margin-right: 2.5em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 margin-right: 1.625em;
 
             }
@@ -277,7 +277,7 @@
 
         span {
             font-size: 0.875em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 1.1875em;
 
             }
@@ -288,7 +288,7 @@
             font-weight: bold;
             font-size: 0.75em;
             margin-top: -0.125em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 margin-top: 0;
                 font-size: 1em;
             }
@@ -297,7 +297,7 @@
         .apartments__reverse {
             bottom: -0.875em;
             left: 1.25em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 left: 1.625em;
 
             }
@@ -309,7 +309,7 @@
         height: 1.25em;
         margin-right: 0.625em;
         font-size: 0.6em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             font-size: 1em;
         }
     }

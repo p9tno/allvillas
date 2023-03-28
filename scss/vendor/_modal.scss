@@ -24,7 +24,7 @@
         right: 0.375em;
         top: -2em;
         color: rgba($color_white, 0.2);
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             right: 1.5625em;
             top: 1.5625em;
             color: rgba($color_info, 0.2);
@@ -33,14 +33,14 @@
 
         &:hover {
             color: rgba($color_white, 0.7);
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 color: rgba($color_info, 0.7);
             }
         }
 
         i {
             font-size: 0.875em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 1.5625em;
 
             }
@@ -68,7 +68,7 @@
         width: auto;
         margin: auto;
         width: 21.25em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             width: 41.875em;
         }
     }
@@ -84,7 +84,7 @@
         text-align: center;
 
         padding: 2.5em 1em 2em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             padding: 4.0625em 2em 5.9375em;
 
         }
@@ -117,14 +117,14 @@
         text-transform: uppercase;
         line-height: 0.95;
         margin-bottom: 0.9375em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-bottom: 2.1875em;
 
         }
 
         span {
             font-size: 1.5625em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 2.75em;
             }
         }
@@ -132,14 +132,14 @@
 
     &-subtitle {
         margin-bottom: 1.25em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-bottom: 2.1875em;
 
         }
 
         span {
             font-size: 0.875em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 1.1875em;
 
             }
@@ -163,7 +163,7 @@
         padding: 1.276em 1em 1.276em 2.5em;
         width: 18.75em;
         margin-bottom: 1.25em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             padding: 2.213em 1em 2.213em 4em;
             margin-bottom: 2.8125em;
             width: 31.25em;
@@ -178,7 +178,7 @@
             font-family: 'icon';
             color: $color_success;
             font-size: 0.875em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 1.375em;
 
             }
@@ -190,7 +190,7 @@
             text-transform: uppercase;
 
             font-size: 0.6875em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 0.9375em;
 
             }
@@ -200,7 +200,7 @@
     .form__content {
         margin: 0 auto;
         width: 16.25em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             width: 23.75em;
         }
     }
@@ -213,7 +213,7 @@
         margin-top: 3em;
         padding-bottom: 3em;
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             width: 61.25em;
         }
     }
@@ -222,18 +222,18 @@
         text-align: left;
 
         padding: 1.5625em 0.625em 1.25em 1.25em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             padding: 4.0625em 4.0625em 4.375em 3.125em;
         }
     }
 
     .modal-title {
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             width: 80%;
         }
 
         span {
-            @media (max-width: 767px) {
+            @media (max-width: 500px) {
                 font-size: 1.25em;
 
             }
@@ -244,7 +244,7 @@
         p {
             font-size: 0.75em;
 
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 1.1875em;
 
             }

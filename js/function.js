@@ -1,5 +1,4 @@
-$(document).ready(function() {
-
+window.onload = function() {
     function preloader() {
         $(()=>{
             $('body').addClass( 'nav-open' );
@@ -15,7 +14,9 @@ $(document).ready(function() {
         });
     }
     preloader();
+}
 
+$(document).ready(function() {
     function toggleNav() {
         $('.hamburger').click(function(event) {
             $('.hamburger').toggleClass('hamburger_open');
@@ -209,7 +210,7 @@ $(document).ready(function() {
         spaceBetween: 15,
 
         breakpoints: {
-            501: {
+            1200: {
                 slidesPerView: 3,
                 spaceBetween: 195,
                 navigation: {

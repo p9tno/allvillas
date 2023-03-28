@@ -1,5 +1,5 @@
 .payment {
-    @media (max-width: 767px) {
+    @media (max-width: 500px) {
         padding-top: 4.375em;
     }
 
@@ -7,7 +7,7 @@
         text-align: center;
         margin-bottom: 0.9375em;
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             text-align: left;
             margin-bottom: 4.375em;
             display: flex;
@@ -26,7 +26,7 @@
         margin: 0.9375em auto 0;
         width: 19em;
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             width: 23.75em;
             margin: 0;
             flex: none;
@@ -48,7 +48,7 @@
 
         span {
             font-size: 0.875em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 1.1875em;
             }
         }
@@ -56,7 +56,7 @@
 
     &__label {
 
-        @media (max-width: 767px) {
+        @media (max-width: 500px) {
             margin-top: 0.9375em;
 
             span {
@@ -64,7 +64,7 @@
             }
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             position: absolute;
             top: -2.3em;
             left: -1.125em;
@@ -89,7 +89,7 @@
         border-radius: 0.9375em;
         padding: 0.75em 0.9375em 1.25em;
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             box-shadow: 0 75px 150px rgba(51, 51, 51, 0.05);
             border-radius: 1.875em;
             padding: 3.625em 2.8125em 3.25em;
@@ -102,7 +102,7 @@
     }
 
     &__list {
-        @media (max-width: 767px) {
+        @media (max-width: 500px) {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-column-gap: 1.25em;
@@ -110,7 +110,7 @@
 
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             display: flex;
             justify-content: space-between;
             border: 0.0625em solid rgba(114, 132, 150, 0.5);
@@ -122,7 +122,7 @@
     &__item {
         text-align: center;
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             border-right: 0.0625em solid rgba(114, 132, 150, 0.5);
             width: 100%;
             display: flex;
@@ -140,7 +140,7 @@
             .payment__top {
                 color: $color_success;
 
-                @media (min-width: 768px) {
+                @media (min-width: 501px) {
                     &:after {
                         background-color: $color_success;
                         height: 2.5em;
@@ -151,7 +151,7 @@
             }
         }
 
-        @media (max-width: 767px) {
+        @media (max-width: 500px) {
             .payment__top {
                 position: relative;
 
@@ -235,7 +235,7 @@
 
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             &:nth-child(2) {
                 .payment__top {
                     margin-bottom: 1.875em;
@@ -283,7 +283,7 @@
 
     &__top {
 
-        @media (max-width: 767px) {
+        @media (max-width: 500px) {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -298,7 +298,7 @@
             font-weight: 300;
             line-height: 1;
             font-size: 2.1875em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 2.5em;
 
             }
@@ -309,13 +309,13 @@
             font-size: 0.5625em;
             margin-top: 0;
             margin-bottom: 0;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 margin-bottom: 2.6em;
                 font-size: 0.625em;
             }
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             width: 100%;
 
             &:after {
@@ -333,7 +333,7 @@
 
     &__bottom {
         padding-top: 0.625em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             padding-bottom: 1.75em;
             padding-top: 1.25em;
 
@@ -342,7 +342,7 @@
         span {
             font-size: 0.5625em;
             color: rgba($main_color,0.5);
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 0.625em;
                 color: rgba($main_color,1);
 
@@ -354,7 +354,7 @@
         margin-top: 1.625em;
         line-height: 1;
         text-align: center;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-top: 0.625em;
             display: flex;
             justify-content: center;
@@ -368,7 +368,7 @@
             justify-content: center;
             font-size: 1.25em;
 
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 2.125em;
 
             }
@@ -378,7 +378,7 @@
             font-weight: 200;
             margin: 0 0.05em;
             font-size: 1.5em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 3em;
 
             }

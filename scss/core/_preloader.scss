@@ -97,8 +97,8 @@
 
 }
 
-.content {
-    .loading {
+.preloader__content {
+    .preloader__loading {
         width: 5em;
         height: 3.125em;
         position: relative;
@@ -142,10 +142,10 @@
 
         span {
             background-color: rgba($color_info,0.7);
-            border-radius: 50px;
+            border-radius: 3.125em;
             display: block;
-            height: 16px;
-            width: 16px;
+            height: 1em;
+            width: 1em;
             bottom: 0;
             position: absolute;
             transform: translateX(4em);

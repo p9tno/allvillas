@@ -24,14 +24,14 @@
 	padding: 2.128em 1em;
 	border-radius: 9.1em;
 
-	@media (min-width: 768px) {
+	@media (min-width: 501px) {
 		font-size: 0.9375em;
 		padding: 2.067em 3em;
 		border-radius: 6.7em;
 	}
 
 	&_lg {
-		@media (min-width: 768px) {
+		@media (min-width: 501px) {
 			padding: 2.334em 3em;
 		}
 	}
@@ -63,7 +63,7 @@
 
 		font-size: 0.625em;
 		padding: 1em 5.5em;
-		@media (min-width: 768px) {
+		@media (min-width: 501px) {
 			font-size: 0.875em;
 			padding: 1.473em 2.623em;
 
@@ -96,7 +96,7 @@
 
 		font-size: 0.75em;
 		padding: 1em 2.623em;
-		@media (min-width: 768px) {
+		@media (min-width: 501px) {
 			padding: 1.473em 2.623em;
 			font-size: 0.875em;
 

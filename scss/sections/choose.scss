@@ -1,14 +1,14 @@
 .choose {
     padding-bottom: 7.1875em;
 
-    @media (max-width: 767px) {
+    @media (max-width: 500px) {
         padding-top: 0;
         padding-bottom: 0;
     }
 
     &__caption {
         margin-bottom: 1.25em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-bottom: 1.5em;
             display: flex;
             align-items: flex-end;
@@ -19,7 +19,7 @@
     &__label {
         text-align: center;
         padding-top: 0.75em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             padding-top: 0;
             padding-bottom: 0.5em;
             text-align: right;
@@ -28,7 +28,7 @@
 
         span {
             font-size: 0.875em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 1.1875em;
 
             }
@@ -40,7 +40,7 @@
         background-color: $color_white;
         padding: 2.5em 0.625em;
         margin: 0 -0.625em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin: 0;
             border-radius: 1.5625em;
             padding: 1.875em;
@@ -50,7 +50,7 @@
 
     &__grid {
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 0.9375em;
@@ -64,7 +64,7 @@
         border-radius: 0.9375em;
         overflow: hidden;
 
-        @media (max-width: 767px) {
+        @media (max-width: 500px) {
             height: 7.5em;
             margin-bottom: 0.625em;
 
@@ -74,7 +74,7 @@
 
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             transform: translateY(0);
 
             &:hover {
